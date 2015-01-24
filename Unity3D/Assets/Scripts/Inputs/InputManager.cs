@@ -8,6 +8,12 @@ using System.Collections;
  */
 public class InputManager : MonoBehaviour {
 
+  /**
+   * On score update event.
+   */
+  public delegate void OnKeyUpdate (string key);
+  public static event OnKeyUpdate On_KeyUpdate;
+
   // UP
   private static Vector3 moveUp = new Vector3(0f, 0f, 1f);
   // DOWN
@@ -131,7 +137,7 @@ public class InputManager : MonoBehaviour {
       // Generate correct key for Desktop
       case Scheme.desktop:
         keys.correct = (int)Random.Range(97f, 123f);
-        Debug.Log((KeyCode)key.correct);
+        On_KeyUpdate(((KeyCode)keys.correct).ToString());
         break;
 
     }

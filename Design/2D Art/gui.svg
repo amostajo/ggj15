@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="gui.svg"
+   inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\key.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3854">
+      <stop
+         style="stop-color:#ff4343;stop-opacity:1;"
+         offset="0"
+         id="stop3856" />
+      <stop
+         style="stop-color:#ff9b9b;stop-opacity:1;"
+         offset="1"
+         id="stop3858" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3799">
+      <stop
+         id="stop3801"
+         offset="0"
+         style="stop-color:#e0e0e0;stop-opacity:1;" />
+      <stop
+         id="stop3803"
+         offset="1"
+         style="stop-color:#f3f3f3;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3757">
+      <stop
+         style="stop-color:#d9d9d9;stop-opacity:1;"
+         offset="0"
+         id="stop3759" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757"
+       id="linearGradient3763"
+       x1="450.02802"
+       y1="267.98639"
+       x2="272.21573"
+       y2="425.57019"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49668875,0,0,0.49668873,20.575805,43.176228)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7"
+       id="linearGradient3763-1"
+       x1="488.41382"
+       y1="213.43814"
+       x2="201.50505"
+       y2="494.26056"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3757-7">
+      <stop
+         style="stop-color:#d0d0d0;stop-opacity:1;"
+         offset="0"
+         id="stop3759-4" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761-0" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.38371611,0,0,0.3837161,59.642071,83.512698)"
+       y2="351.87466"
+       x2="345.74011"
+       y1="500.05908"
+       x1="346.02789"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3780"
+       xlink:href="#linearGradient3799"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(0.38371611,0,0,0.3837161,362.65217,85.72966)"
+       y2="351.87466"
+       x2="345.74011"
+       y1="500.05908"
+       x1="346.02789"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3780-9"
+       xlink:href="#linearGradient3854"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3799-2">
+      <stop
+         id="stop3801-6"
+         offset="0"
+         style="stop-color:#e0e0e0;stop-opacity:1;" />
+      <stop
+         id="stop3803-5"
+         offset="1"
+         style="stop-color:#f3f3f3;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-74"
+       id="linearGradient3763-7"
+       x1="450.02802"
+       y1="267.98639"
+       x2="272.21573"
+       y2="425.57019"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49668875,0,0,0.49668873,20.575805,43.176228)" />
+    <linearGradient
+       id="linearGradient3757-74">
+      <stop
+         style="stop-color:#d9d9d9;stop-opacity:1;"
+         offset="0"
+         id="stop3759-5" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761-7" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7"
+       id="linearGradient3868"
+       x1="197.85712"
+       y1="452.00504"
+       x2="215.71428"
+       y2="510.57648"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7-7"
+       id="linearGradient3868-5"
+       x1="197.85712"
+       y1="452.00504"
+       x2="215.71428"
+       y2="510.57648"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3757-7-7">
+      <stop
+         style="stop-color:#d0d0d0;stop-opacity:1;"
+         offset="0"
+         id="stop3759-4-4" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761-0-4" />
+    </linearGradient>
+    <linearGradient
+       y2="510.57648"
+       x2="215.71428"
+       y1="452.00504"
+       x1="197.85712"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3885"
+       xlink:href="#linearGradient3799"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7"
+       id="linearGradient4013"
+       x1="194.5"
+       y1="399.86218"
+       x2="225.5"
+       y2="399.86218"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7-3"
+       id="linearGradient4013-9"
+       x1="194.5"
+       y1="399.86218"
+       x2="225.5"
+       y2="399.86218"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3757-7-3">
+      <stop
+         style="stop-color:#d0d0d0;stop-opacity:1;"
+         offset="0"
+         id="stop3759-4-3" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761-0-3" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.57798325,-0.37908344,0.37908344,0.57798325,-111.15338,267.15662)"
+       y2="399.86218"
+       x2="225.5"
+       y1="399.86218"
+       x1="194.5"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4030"
+       xlink:href="#linearGradient3757-7-3"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(0.57798325,-0.37908344,0.37908344,0.57798325,143.58609,266.74009)"
+       y2="399.86218"
+       x2="225.5"
+       y1="399.86218"
+       x1="194.5"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4030-3"
+       xlink:href="#linearGradient3757-7-3-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3757-7-3-5">
+      <stop
+         style="stop-color:#d0d0d0;stop-opacity:1;"
+         offset="0"
+         id="stop3759-4-3-6" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761-0-3-9" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(254.73947,-0.41653066)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7-9"
+       id="linearGradient4013-5"
+       x1="194.5"
+       y1="399.86218"
+       x2="225.5"
+       y2="399.86218"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3757-7-9">
+      <stop
+         style="stop-color:#d0d0d0;stop-opacity:1;"
+         offset="0"
+         id="stop3759-4-8" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop3761-0-8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3799-9">
+      <stop
+         id="stop3801-5"
+         offset="0"
+         style="stop-color:#e0e0e0;stop-opacity:1;" />
+      <stop
+         id="stop3803-1"
+         offset="1"
+         style="stop-color:#f3f3f3;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3757-7-9"
+       id="linearGradient3868-3"
+       x1="197.85712"
+       y1="452.00504"
+       x2="215.71428"
+       y2="510.57648"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4072">
+      <stop
+         style="stop-color:#d0d0d0;stop-opacity:1;"
+         offset="0"
+         id="stop4074" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="1"
+         id="stop4076" />
+    </linearGradient>
+    <linearGradient
+       y2="510.57648"
+       x2="215.71428"
+       y1="452.00504"
+       x1="197.85712"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4092"
+       xlink:href="#linearGradient3757-7-9"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3854"
+       id="linearGradient4167"
+       x1="133.99998"
+       y1="487.71933"
+       x2="277.42856"
+       y2="487.71933"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.289915"
+     inkscape:cx="454.50297"
+     inkscape:cy="737.35467"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3904" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Backlayer"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient3868);fill-opacity:1;stroke:#8e8e8e;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3860"
+       sodipodi:cx="205.71428"
+       sodipodi:cy="487.71933"
+       sodipodi:rx="70.714287"
+       sodipodi:ry="70.35714"
+       d="m 276.42857,487.71933 a 70.714287,70.35714 0 1 1 -141.42858,0 70.714287,70.35714 0 1 1 141.42858,0 z"
+       transform="matrix(1.0457798,0,0,1.0510883,-5.2054603,-30.103591)"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:url(#linearGradient3763);fill-opacity:1;fill-rule:nonzero;stroke:#aaaaaa;stroke-width:0.99337751;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3755"
+       width="149.00662"
+       height="149.00662"
+       x="118.91516"
+       y="144.92763"
+       rx="7.1375341"
+       ry="6.9579735"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\key.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:url(#linearGradient3780);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.99337751;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3755-9"
+       width="115.11484"
+       height="115.11483"
+       x="135.61398"
+       y="162.12059"
+       rx="5.514091"
+       ry="5.3753715"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\key.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99337750999999996;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3755-98"
+       width="149.00662"
+       height="149.00662"
+       x="421.92526"
+       y="147.14459"
+       rx="7.1375341"
+       ry="6.9579735"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\keytimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:url(#linearGradient3780-9);fill-opacity:1.0;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.99337750999999996;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3755-9-3"
+       width="115.11484"
+       height="115.11483"
+       x="438.62408"
+       y="164.33755"
+       rx="5.514091"
+       ry="5.3753715"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\keytimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient3885);fill-opacity:1;stroke:#807373;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3860-9"
+       sodipodi:cx="205.71428"
+       sodipodi:cy="487.71933"
+       sodipodi:rx="70.714287"
+       sodipodi:ry="70.35714"
+       d="m 276.42857,487.71933 a 70.714287,70.35714 0 1 1 -141.42858,0 70.714287,70.35714 0 1 1 141.42858,0 z"
+       transform="matrix(0.76160305,0,0,0.76546903,53.614538,109.30742)"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 205.30879,429.27426 0,10 5,5 5,-5 0,-10 z"
+       id="path3906"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 214.70877,535.89442 0.0556,-9.99984 -4.97213,-5.02772 -5.02771,4.97212 -0.0556,9.99985 z"
+       id="path3906-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 156.31435,487.21711 9.99906,0.13707 5.06807,-4.931 -4.931,-5.06806 -9.99906,-0.13708 z"
+       id="path3906-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 264.54367,476.6756 -9.99997,0.0247 -4.98761,5.01236 5.01236,4.98761 9.99997,-0.0247 z"
+       id="path3906-6-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 171.32367,445.77987 6.91616,7.22165 5.23552,1.98142 -1.68066,-5.24023 -6.91616,-7.22165 z"
+       id="path3906-6-19"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 249.36666,445.77171 -7.26717,6.86832 -2.01595,5.22231 5.25121,-1.64601 7.26717,-6.86831 z"
+       id="path3906-6-19-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 248.72672,520.54842 -7.09696,-7.04406 -5.28405,-1.8481 1.81292,5.19596 7.09696,7.04405 z"
+       id="path3906-6-19-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 173.62699,522.7311 6.95034,-7.18877 1.77861,-5.30784 -5.17172,1.88094 -6.95033,7.18876 z"
+       id="path3906-6-19-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#3b3434;fill-opacity:1;stroke:none"
+       d="m 207.47033,453.90614 5,-5 0,45 -5,5 z"
+       id="path4001"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#3b3434;fill-opacity:1;stroke:none"
+       d="m 202.47033,488.90614 20,-15 0,5 -15,10 z"
+       id="path4003"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient4013);stroke:#7d7d7d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 195,392.36218 0,15 30,0 0,-15 z"
+       id="path4005"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient4030);fill-opacity:1;stroke:#7d7d7d;stroke-width:1.38241661;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 150.29136,420.01412 5.68625,8.66974 17.3395,-11.3725 -5.68625,-8.66974 z"
+       id="path4005-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient4092);fill-opacity:1;stroke:#8e8e8e;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3860-6"
+       sodipodi:cx="205.71428"
+       sodipodi:cy="487.71933"
+       sodipodi:rx="70.714287"
+       sodipodi:ry="70.35714"
+       d="m 276.42857,487.71933 a 70.714287,70.35714 0 1 1 -141.42858,0 70.714287,70.35714 0 1 1 141.42858,0 z"
+       transform="matrix(1.0457798,0,0,1.0510883,249.53401,-30.520121)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient4167);fill-opacity:1;stroke:#807373;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3860-9-2"
+       sodipodi:cx="205.71428"
+       sodipodi:cy="487.71933"
+       sodipodi:rx="70.714287"
+       sodipodi:ry="70.35714"
+       d="m 276.42857,487.71933 a 70.714287,70.35714 0 1 1 -141.42858,0 70.714287,70.35714 0 1 1 141.42858,0 z"
+       transform="matrix(0.76160305,0,0,0.76546903,455.08434,107.1441)"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 606.77859,427.11094 0,10 5,5 5,-5 0,-10 z"
+       id="path3906-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 616.17857,533.7311 0.0556,-9.99984 -4.97213,-5.02772 -5.02771,4.97212 -0.0556,9.99985 z"
+       id="path3906-0-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 557.78415,485.05379 9.99906,0.13707 5.06807,-4.931 -4.931,-5.06806 -9.99906,-0.13708 z"
+       id="path3906-6-198"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 666.01348,474.51228 -9.99997,0.0247 -4.98761,5.01236 5.01236,4.98761 9.99997,-0.0247 z"
+       id="path3906-6-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 572.79347,443.61655 6.91616,7.22165 5.23552,1.98142 -1.68066,-5.24023 -6.91616,-7.22165 z"
+       id="path3906-6-19-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 650.83647,443.60839 -7.26717,6.86832 -2.01595,5.22231 5.25121,-1.64601 7.26717,-6.86831 z"
+       id="path3906-6-19-0-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 650.19653,518.3851 -7.09696,-7.04406 -5.28405,-1.8481 1.81292,5.19596 7.09696,7.04405 z"
+       id="path3906-6-19-4-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#545454;fill-opacity:1;stroke:none"
+       d="m 575.09679,520.56778 6.95034,-7.18877 1.77861,-5.30784 -5.17172,1.88094 -6.95033,7.18876 z"
+       id="path3906-6-19-2-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#3b3434;fill-opacity:1;stroke:none"
+       d="m 608.94013,451.74282 5,-5 0,45 -5,5 z"
+       id="path4001-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#3b3434;fill-opacity:1;stroke:none"
+       d="m 603.94013,486.74282 20,-15 0,5 -15,10 z"
+       id="path4003-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\clocktimer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient4013-5);fill-opacity:1;stroke:#7d7d7d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 449.73946,391.94565 0,15 30,0 0,-15 z"
+       id="path4005-7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient4030-3);fill-opacity:1;stroke:#7d7d7d;stroke-width:1.38241661;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 405.03082,419.59759 5.68625,8.66974 17.3395,-11.3725 -5.68625,-8.66974 z"
+       id="path4005-1-2"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
