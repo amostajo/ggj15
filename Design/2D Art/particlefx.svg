@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="100.66736"
+     inkscape:cy="1004.3033"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ffdf00;fill-opacity:1;stroke:none"
+       d="m 85.636579,53.880039 c -0.446834,0.562683 -1.090814,1.11438 -1.079783,1.9387 -0.444049,-0.277661 -0.445094,-0.643924 -0.588972,-0.98162 -0.378375,1.046947 -0.138012,2.253988 1.079783,3.239348 1.330826,-0.146004 1.574213,-1.16196 1.963241,-2.061403 -0.344058,-0.01953 -0.640632,0.406044 -0.871189,0.07362 -0.250749,-0.601952 -0.603454,-1.365536 -0.50308,-2.208646 z"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Particles\fire.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff8c00;fill-opacity:1;stroke:none"
+       d="m 85.375235,54.554903 c -0.446832,0.562684 -0.649084,1.10211 -0.638053,1.926431 -0.444049,-0.277663 -0.420553,-0.521223 -0.564431,-0.858918 -0.10843,1.108297 0.0215,1.542312 0.895728,2.454051 1.318557,-0.379139 1.144756,-1.014717 1.668756,-1.803728 -0.356327,0.15226 -0.395227,0.430585 -0.687134,0.134973 -0.361182,-0.52833 -0.664806,-1.009698 -0.674866,-1.852809 z"
+       id="path2985-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Particles\fire.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff3400;fill-opacity:1;stroke:none"
+       d="m 85.266325,55.223632 c -0.446832,0.562684 -0.317788,0.967137 -0.306756,1.791458 -0.444048,-0.277662 -0.494174,-0.312628 -0.638053,-0.650324 0.112434,0.997865 0.500042,1.198745 0.748486,1.693296 1.097691,-0.563194 0.874809,-0.69569 1.398809,-1.484702 -0.356328,0.15226 -0.174363,0.234261 -0.46627,0.147243 -0.238479,-0.307465 -0.726156,-0.65386 -0.736216,-1.496971 z"
+       id="path2985-1-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Particles\fire.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
