@@ -7,9 +7,9 @@ public class DestructibleObject : MonoBehaviour {
 	private GameManager game;
 
 
-	public float health=100F;
+	public float health=10F;
 	
-	public float reduceHealth=2F;
+	public float reduceHealth=1F;
 
 	public bool isDestroyed = false;
 	
@@ -20,6 +20,8 @@ public class DestructibleObject : MonoBehaviour {
 	public float impact;
 
 	public float impactFactor;
+
+	public bool collisionWall;
 
 	//Assigns horizontal movement to finger
 	public Vector3 direction = new Vector3(-1f, 0f, 0f);
@@ -50,8 +52,15 @@ public class DestructibleObject : MonoBehaviour {
 
 	public void OnCollisionEnter(){
 		this.health -= reduceHealth;
-		rigidbody.AddForce (-direction * impact); 
+		rigidbody.AddForce (-direction * impact);
 		impact += impact * impactFactor;
 	}
+
+	public void OnTriggerEnter(Collider other) {
+		rigidbody.velocity = Vector3.zero;
+		rigidbody.angularVelocity = Vector3.zero;
+	}
+
+
 
 }

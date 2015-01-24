@@ -176,7 +176,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 192720830}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 10, z: 10}
@@ -357,8 +357,8 @@ MonoBehaviour:
   score: 0
   timer: 0
   character: {fileID: 0}
-  force: 1
-  forceFactor: .0500000007
+  force: 12
+  forceFactor: .0299999993
   lastPoints: 5
 --- !u!4 &296295188
 Transform:
@@ -913,13 +913,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f868d25b2174a91b886163b6432262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  reduceHealth: 2
+  health: 10
+  reduceHealth: 1
   isDestroyed: 0
   force: 0
   forceFactor: 0
-  impact: 300
-  impactFactor: .150000006
+  impact: 400
+  impactFactor: .200000003
+  collisionWall: 0
   direction: {x: -1, y: 0, z: 0}
 --- !u!23 &981334379
 Renderer:
@@ -967,7 +968,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 981334377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.71291924, y: 0, z: 0}
+  m_LocalPosition: {x: 3.212919, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1010,7 +1011,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016860047}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 10, z: 10}
@@ -1522,13 +1523,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f868d25b2174a91b886163b6432262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  reduceHealth: 2
+  health: 10
+  reduceHealth: 1
   isDestroyed: 0
-  force: 1
-  forceFactor: .0500000007
-  impact: -300
-  impactFactor: .150000006
+  force: 12
+  forceFactor: .0299999993
+  impact: -400
+  impactFactor: .200000003
+  collisionWall: 0
   direction: {x: -1, y: 0, z: 0}
 --- !u!23 &1622042798
 Renderer:
@@ -1576,7 +1578,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622042796}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.61578894, y: 0, z: 0}
+  m_LocalPosition: {x: -3.11578894, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
