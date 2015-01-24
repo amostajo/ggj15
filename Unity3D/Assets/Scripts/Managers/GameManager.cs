@@ -146,4 +146,13 @@ public class GameManager : MonoBehaviour {
 	public virtual void End () {
 		// TODO
 	}
+
+	/**
+	 * To be called by extended classes.
+	 *
+	 * @param float ratio Time change ratio where 1f is full and 0f is not.
+	 */
+	public void TimerChange (float ratio) {
+		On_TimerChange(ratio);
+	}
 }
