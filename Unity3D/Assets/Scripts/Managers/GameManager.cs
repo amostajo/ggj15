@@ -9,6 +9,18 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	/**
+	 * On score update event.
+	 */
+  public delegate void OnScoreUpdate (int score);
+  public static event OnScoreUpdate On_ScoreUpdate;
+
+	/**
+	 * On key timer change event.
+	 */
+  public delegate void OnTimerChange (float ratio);
+  public static event OnTimerChange On_TimerChange;
+
+	/**
 	 * Flag that indicates if game is paused.
 	 */
 	public static bool paused = false;
@@ -62,7 +74,9 @@ public class GameManager : MonoBehaviour {
 	public virtual void Start () {
 		if (hasGameTimer) {
 			this.timer = PlayerPrefs.GetFloat("gameTime");
+			On_TimerChange(0f);
 		}
+		On_ScoreUpdate(this.score);
 	}
 
 	/**
@@ -98,6 +112,7 @@ public class GameManager : MonoBehaviour {
 	 */
 	public void AddScore (int points) {
 		this.score += points;
+		On_ScoreUpdate(this.score);
 	}
 
 	/**
