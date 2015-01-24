@@ -8,6 +8,9 @@ using System.Collections;
  */
 public class GameManager : MonoBehaviour {
 
+	// Minigame
+	public enum Minigame {none = -1, toys = 0, guitar = 1, fire = 2, pencil = 3, haki = 4};
+
 	/**
 	 * On score update event.
 	 */
@@ -24,6 +27,11 @@ public class GameManager : MonoBehaviour {
 	 * Flag that indicates if game is paused.
 	 */
 	public static bool paused = false;
+
+	/**
+	 * Current minigame selected.
+	 */
+	public static GameManager.Minigame minigame;
 
 	/**
 	 * Flag that indicates if game should count game timer.
