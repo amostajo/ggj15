@@ -37,7 +37,7 @@
 		/*
 		 * initialize variables
 		 */ 
-		public void Start(){
+		public override void Start(){
 			this.timer = 0F;
 			this.inputs.RequestKey();
 		}

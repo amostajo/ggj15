@@ -15,6 +15,11 @@ public class GameManagerRepetitive : GameManager {
 
     public float forceFactor;
 
+    void OnTriggerEnter(Collider other)
+    {
+        Finish();
+    }
+
     public override void Awake()
     {
         base.Awake();
@@ -24,6 +29,7 @@ public class GameManagerRepetitive : GameManager {
     public override void Start()
     {
         inputs.RequestKey();
+        //Fixing needed, Error on recieving value from  Game Manager On_TimerChange(0f);
     }
 
     //Update checks for Key sent and Key Pressed
