@@ -295,11 +295,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2484acebd71b97418d3aa53b9cd0c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasGameTimer: 0
+  hasGlobalTimer: 0
   globalTime: 0
   inputs: {fileID: 0}
   score: 0
   timer: 0
+  character: {fileID: 0}
   force: 2.5
   forceFactor: .0199999996
 --- !u!4 &296295188
@@ -387,14 +388,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 299956776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 387999f69ade20f4da7087281243122b, type: 3}
+  m_Script: {fileID: 11500000, guid: 049583186e268074f8098fb6183b76be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: .5
   force: 5
   forceFactor: .100000001
-  timer: 0
-  game: {fileID: 0}
 --- !u!54 &299956778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -950,9 +949,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1124349774}
-  - 33: {fileID: 1124349773}
   - 65: {fileID: 1124349772}
-  - 23: {fileID: 1124349771}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -960,26 +957,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1124349771
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1124349770}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
 --- !u!65 &1124349772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -990,15 +967,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 13.4700003, z: 1}
+  m_Size: {x: 1, y: 13.4700003, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1124349773
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1124349770}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1124349774
 Transform:
   m_ObjectHideFlags: 0
@@ -1590,6 +1560,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1857213508}
   - 114: {fileID: 1857213507}
+  - 114: {fileID: 1857213510}
   - 114: {fileID: 1857213509}
   m_Layer: 8
   m_Name: Progress Bar
@@ -1640,6 +1611,18 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857213506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c5b0bd58059994f8de9e5ec8b9513d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1857213510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400044, guid: 32272efa483910e4998b8656be9e255e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1315328104}
   m_GameObject: {fileID: 1857213506}
   m_Enabled: 1
   m_EditorHideFlags: 0
