@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 	/**
 	 * Flag that indicates if game should count game timer.
 	 */
-	public bool hasGameTimer;
+	public bool hasGlobalTimer;
 
 	/**
 	 * Global time of the game. Not to use in mini games.
@@ -53,6 +53,12 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public float timer;
 
+	/**
+	 * Character.
+	 */
+	[HideInInspector]
+	public Character character;
+
 	/** 
 	 * Returns game manager in scene.
 	 */
@@ -66,13 +72,14 @@ public class GameManager : MonoBehaviour {
 	public virtual void Awake () {
 		this.inputs = FindObjectOfType<InputManager>();
 		this.score = PlayerPrefs.GetInt("score");
+		this.character = FindObjectOfType<Character>();
 	}
 
 	/**
 	 * Unity start.
 	 */
 	public virtual void Start () {
-		if (hasGameTimer) {
+		if (hasGlobalTimer) {
 			this.timer = PlayerPrefs.GetFloat("gameTime");
 			On_TimerChange(0f);
 		}
@@ -83,11 +90,18 @@ public class GameManager : MonoBehaviour {
 	 * Fixed update.
 	 */
 	public virtual void FixedUpdate () {
-		if (hasGameTimer && !GameManager.paused) {
-			this.timer += Time.deltaTime;
-			On_TimerChange(1f - (timer / globalTime));
-			if (this.timer >= globalTime) {
-				End();
+		if (!GameManager.paused) {
+			// Global time
+			if (hasGlobalTimer) {
+				this.timer += Time.deltaTime;
+				On_TimerChange(1f - (timer / globalTime));
+				if (this.timer >= globalTime) {
+					End();
+				}
+			}
+			// Character movement
+			if (character) {
+				character.SetMovement(inputs.movement);
 			}
 		}
 	}
@@ -121,7 +135,7 @@ public class GameManager : MonoBehaviour {
 	 */
 	public virtual void Finish () {
 		PlayerPrefs.SetInt("score", score);
-		if (hasGameTimer) {
+		if (hasGlobalTimer) {
 			PlayerPrefs.SetFloat("gameTime", timer);
 		}
 	}
