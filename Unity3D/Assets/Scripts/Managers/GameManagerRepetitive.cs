@@ -15,11 +15,6 @@ public class GameManagerRepetitive : GameManager {
 
     public float forceFactor;
 
-    void OnTriggerEnter(Collider other)
-    {
-        Finish();
-    }
-
     public override void Awake()
     {
         base.Awake();

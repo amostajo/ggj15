@@ -17,6 +17,13 @@ public class PushingFinger : MonoBehaviour {
 
     private float timer;
 
+    private GameManager game;
+
+    void Awake()
+    {
+        game = GameManager.Get();
+    }
+
 	void Start () {
         timer = 0f;
         if (rigidbody)
@@ -42,4 +49,13 @@ public class PushingFinger : MonoBehaviour {
         }
 	
 	}
+
+    //This will cause the colliding object to stop upon contact with the trigger
+    void OnTriggerEnter(Collider other)
+    {
+        game.Finish();
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.angularVelocity = Vector3.zero;
+        rigidbody.isKinematic = true;
+    }
 }
