@@ -8,6 +8,9 @@ public class GameManagerRepetitive : GameManager {
     //Call PushingObject Script, set pusher
     private PushingObject pusher;
 
+	//Call PushingObject Script, set pusher
+	private DestructibleObject destruct;
+
     //Direction Vector to return Finger
     public static Vector3 direction = new Vector3(-1f, 0f, 0f);
 
@@ -15,10 +18,13 @@ public class GameManagerRepetitive : GameManager {
 
     public float forceFactor;
 
+	public int lastPoints=5;
+
     public override void Awake()
     {
         base.Awake();
         pusher = FindObjectOfType<PushingObject>();
+		destruct = FindObjectOfType<DestructibleObject>();
     }
 
     public override void Start()
@@ -40,6 +46,17 @@ public class GameManagerRepetitive : GameManager {
                     pusher.rigidbody.AddForce(direction*force);
                     force += force*forceFactor;
                 }
+				if(destruct.health <= 0){
+						destruct.isDestroyed = true;
+						AddScore(lastPoints);
+						Finish();
+				}
+				else{
+					if(destruct.health >= 0 && !destruct.isDestroyed){
+						destruct.rigidbody.AddForce(destruct.direction * force);
+						force += force*forceFactor;
+					}
+				}
             }
             else
             {

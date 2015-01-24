@@ -6,7 +6,7 @@ using System.Collections;
 public class PushingObject : MonoBehaviour {
 
     //Assigns horizontal movement to finger
-    private static Vector3 direction = new Vector3(1f, 0f, 0f);
+    private Vector3 direction = new Vector3(1f, 0f, 0f);
 
     //Variables assigned
     public float frequency;
