@@ -77,6 +77,7 @@
 				 */
 				timer += Time.deltaTime;
 				changeTimer += Time.deltaTime;
+			TimerChange(1f - (timer / timeToLose));
 				/*
 				 * checks if the timer is the same time to lose when user don't press anything
 				 */ 
