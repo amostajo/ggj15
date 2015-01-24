@@ -85,6 +85,7 @@ public class GameManager : MonoBehaviour {
 	public virtual void FixedUpdate () {
 		if (hasGameTimer && !GameManager.paused) {
 			this.timer += Time.deltaTime;
+			On_TimerChange(1f - (timer / globalTime));
 			if (this.timer >= globalTime) {
 				End();
 			}
