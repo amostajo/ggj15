@@ -5,8 +5,8 @@ using System.Collections;
 
 public class GameManagerRepetitive : GameManager {
 
-    //Call PushingFinger Script, set pusher
-    private PushingFinger pusher;
+    //Call PushingObject Script, set pusher
+    private PushingObject pusher;
 
     //Direction Vector to return Finger
     public static Vector3 direction = new Vector3(-1f, 0f, 0f);
@@ -18,7 +18,7 @@ public class GameManagerRepetitive : GameManager {
     public override void Awake()
     {
         base.Awake();
-        pusher = FindObjectOfType<PushingFinger>();
+        pusher = FindObjectOfType<PushingObject>();
     }
 
     public override void Start()

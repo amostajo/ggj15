@@ -3,7 +3,7 @@ using System.Collections;
 
 //@author Daniel Vuurman <danielvuurman@hotmail.com>
 
-public class PushingFinger : MonoBehaviour {
+public class PushingObject : MonoBehaviour {
 
     //Assigns horizontal movement to finger
     private static Vector3 direction = new Vector3(1f, 0f, 0f);
