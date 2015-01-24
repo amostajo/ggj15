@@ -10,13 +10,13 @@ public class TimerListener : MonoBehaviour {
 	/**
 	 * NGUI progress bar
 	 */
-	private UIProgressBar bar;
+	private UISlider slider;
 
 	/**
 	 * Unity Awake
 	 */
 	public void Awake () {
-		bar = GetComponent<UIProgressBar>();
+		slider = GetComponent<UISlider>();
 	}
 
 	/** 
@@ -39,8 +39,8 @@ public class TimerListener : MonoBehaviour {
 	 * @param float ratio.
 	 */
 	public void OnTimerChange (float ratio) {
-		if (bar) {
-			bar.value = ratio;
+		if (slider) {
+			slider.value = ratio;
 		}
 	}
 }
