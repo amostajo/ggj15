@@ -41,6 +41,13 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public float timer;
 
+	/** 
+	 * Returns game manager in scene.
+	 */
+	public static GameManager Get () {
+		return FindObjectOfType<GameManager>();
+	}
+
 	/**
 	 * Unity Awake
 	 */
