@@ -29,6 +29,7 @@ public class GameManagerRepetitive : GameManager {
 
     public override void Start()
     {
+        GameManager.paused = true;
         inputs.RequestKey();
         //Fixing needed, Error on recieving value from  Game Manager On_TimerChange(0f);
     }
@@ -37,12 +38,20 @@ public class GameManagerRepetitive : GameManager {
     //Ends game on mistake
     public void Update()
     {
-        if (!GameManager.paused && this.inputs.keyCheck) {
+        if (GameManager.paused && this.inputs.keyCheck)
+        {
+            if (this.inputs.keySuccess)
+            {
+                GameManager.paused = false;
+            }
+        }
+        if  (!GameManager.paused && this.inputs.keyCheck) {
             if (this.inputs.keySuccess)
             {
                 AddScore(1);
                 if (pusher && pusher.rigidbody)
                 {
+                    pusher.force = -5;
                     pusher.rigidbody.AddForce(direction*force);
                     force += force*forceFactor;
                 }
