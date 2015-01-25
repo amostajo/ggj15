@@ -344,7 +344,6 @@ MonoBehaviour:
   inputs: {fileID: 0}
   score: 0
   timer: 0
-  character: {fileID: 0}
   force: -3.5
   forceFactor: .0149999997
   lastPoints: 5
@@ -1104,7 +1103,6 @@ GameObject:
   - 33: {fileID: 885923805}
   - 23: {fileID: 885923803}
   - 54: {fileID: 885923806}
-  - 114: {fileID: 885923808}
   - 65: {fileID: 885923804}
   m_Layer: 0
   m_Name: JohnSmith
@@ -1184,20 +1182,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 64
   m_CollisionDetection: 0
---- !u!114 &885923808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 7805eb8d930374748a72ff8f33714bbc,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 885923801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29b819ad401c3c947b2ad674d4e6b8c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  turnTime: .200000003
 --- !u!1 &936407542
 GameObject:
   m_ObjectHideFlags: 0
