@@ -43,6 +43,10 @@ public class GameManagerRepetitive : GameManager {
             if (this.inputs.keySuccess)
             {
                 GameManager.paused = false;
+                if (pusher && pusher.rigidbody)
+                {
+                    pusher.force = -5;
+                }
             }
         }
         if  (!GameManager.paused && this.inputs.keyCheck) {
@@ -51,7 +55,6 @@ public class GameManagerRepetitive : GameManager {
                 AddScore(1);
                 if (pusher && pusher.rigidbody)
                 {
-                    pusher.force = -5;
                     pusher.rigidbody.AddForce(direction*force);
                     force += force*forceFactor;
                 }
