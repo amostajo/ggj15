@@ -5,16 +5,10 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: JohnController
+  m_Name: GUI.top
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: walk
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: sit
+  - m_Name: show
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -23,23 +17,12 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_StateMachine: {fileID: 110789700}
+    m_StateMachine: {fileID: 110700000}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_StateMachineMotionSetIndex: 0
     m_DefaultWeight: 0
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 3
-    m_Name: candle
-    m_StateMachine: {fileID: 110737312}
-    m_Mask: {fileID: 101100000, guid: bdf6ade489f26794ab67d65ef7c97e50, type: 2}
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_StateMachineMotionSetIndex: 0
-    m_DefaultWeight: 1
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
@@ -50,20 +33,20 @@ Transition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_SrcState: {fileID: 110243518}
-  m_DstState: {fileID: 110291578}
-  m_TransitionDuration: .0521186106
+  m_SrcState: {fileID: 110237131}
+  m_DstState: {fileID: 110278189}
+  m_TransitionDuration: .25
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: walk
+  - m_ConditionMode: 2
+    m_ConditionEvent: show
     m_EventTreshold: 0
-    m_ExitTime: .962499976
+    m_ExitTime: .75
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110166632
+--- !u!1101 &110105173
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -71,54 +54,54 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 110200000}
-  m_DstState: {fileID: 110243518}
-  m_TransitionDuration: .0504201651
+  m_DstState: {fileID: 110237131}
+  m_TransitionDuration: 3
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: sit
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
     m_EventTreshold: 0
-    m_ExitTime: .949579835
+    m_ExitTime: .99000001
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110187518
+--- !u!1101 &110108720
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_SrcState: {fileID: 110291578}
-  m_DstState: {fileID: 110243518}
-  m_TransitionDuration: .265748531
-  m_TransitionOffset: .0307097249
+  m_SrcState: {fileID: 110278189}
+  m_DstState: {fileID: 110259981}
+  m_TransitionDuration: 3
+  m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: walk
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
     m_EventTreshold: 0
-    m_ExitTime: .75
+    m_ExitTime: .99000001
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110193583
+--- !u!1101 &110138761
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_SrcState: {fileID: 110243518}
+  m_SrcState: {fileID: 110259981}
   m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .0374999978
+  m_TransitionDuration: .25
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: sit
+    m_ConditionEvent: show
     m_EventTreshold: 0
-    m_ExitTime: .962499976
+    m_ExitTime: .75
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -128,111 +111,93 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Take 001
+  m_Name: gui.in
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: eeb1e86ae47b2413aab55c63407f6aab, type: 3}
-  m_ParentStateMachine: {fileID: 110789700}
-  m_Position: {x: 396, y: 72, z: 0}
+  - {fileID: 7400000, guid: 1e424729585ebba49bb1ae491f309f4d, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -96, y: 144, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110230272
+--- !u!1102 &110237131
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Candle
+  m_Name: gui.iddle
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: e109726581c648d41a92ab5e47e67a41, type: 3}
-  m_ParentStateMachine: {fileID: 110737312}
-  m_Position: {x: 180, y: 72, z: 0}
+  - {fileID: 7400000, guid: e62a6dbf53f227e4b9d090d2b7075493, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 36, y: 60, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110243518
+--- !u!1102 &110259981
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Idle
+  m_Name: gui.iddle.out
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400002, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
-  m_ParentStateMachine: {fileID: 110789700}
-  m_Position: {x: 276, y: -36, z: 0}
+  - {fileID: 7400000, guid: 0b79e6c48ef0d9941be18d17b39a801f, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 36, y: 240, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110291578
+--- !u!1102 &110278189
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Walk
+  m_Name: gui.out
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400012, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
-  m_ParentStateMachine: {fileID: 110789700}
-  m_Position: {x: 156, y: 72, z: 0}
+  - {fileID: 7400000, guid: 772341752cc9cf04eb905f16583d94ba, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 168, y: 144, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1107 &110737312
-StateMachine:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: candle
-  m_DefaultState: {fileID: 110230272}
-  m_States:
-  - {fileID: 110230272}
-  m_ChildStateMachine: []
-  m_ChildStateMachinePosition: []
-  m_OrderedTransitions:
-    data:
-      first: {fileID: 110230272}
-      second: []
-  m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
---- !u!1107 &110789700
+--- !u!1107 &110700000
 StateMachine:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110243518}
+  m_DefaultState: {fileID: 110237131}
   m_States:
-  - {fileID: 110243518}
-  - {fileID: 110291578}
   - {fileID: 110200000}
+  - {fileID: 110278189}
+  - {fileID: 110237131}
+  - {fileID: 110259981}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110200000}
+      first: {fileID: 110259981}
       second:
-      - {fileID: 110166632}
+      - {fileID: 110138761}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 110243518}
+      first: {fileID: 110237131}
       second:
       - {fileID: 110100000}
-      - {fileID: 110193583}
     data:
-      first: {fileID: 110291578}
+      first: {fileID: 110278189}
       second:
-      - {fileID: 110187518}
+      - {fileID: 110108720}
+    data:
+      first: {fileID: 110200000}
+      second:
+      - {fileID: 110105173}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 108, y: -120, z: 0}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

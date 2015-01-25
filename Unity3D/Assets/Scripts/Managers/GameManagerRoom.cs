@@ -9,6 +9,18 @@ using System.Collections;
 public class GameManagerRoom : GameManager {
 
 	/**
+	 * Event when game begins.
+	 */
+  public delegate void OnGameBegin ();
+  public static event OnGameBegin On_GameBegin;
+
+	/**
+	 * Event when game ends.
+	 */
+  public delegate void OnGameEnd ();
+  public static event OnGameEnd On_GameEnd;
+
+	/**
 	 * Character.
 	 */
 	[HideInInspector]
@@ -27,6 +39,31 @@ public class GameManagerRoom : GameManager {
 	/**
 	 * Saved position where character should spawn.
 	 */
+	public Vector3 introPosition;
+
+	/**
+	 * Saved rotation where character should spawn.
+	 */
+	public Vector3 introRotation;
+
+	/**
+	 * Logo duration befor game stars.
+	 */
+	public float logoTime;
+
+	/**
+	 * Audio sound to be played when outage occurs.
+	 */
+	public AudioClip clipOutage;
+
+	/**
+	 * Audio sound to be played when lighter is up.
+	 */
+	public AudioClip clipLighter;
+
+	/**
+	 * Saved position where character should spawn.
+	 */
 	private Vector3 savedPosition;
 
 	/**
@@ -34,6 +71,10 @@ public class GameManagerRoom : GameManager {
 	 */
 	private Vector3 savedRotation;
 
+	/**
+	 * Timer.
+	 */
+	private float logoTimer;
 	/**
 	 * Unity Awake
 	 */
@@ -51,17 +92,8 @@ public class GameManagerRoom : GameManager {
 				PlayerPrefs.GetFloat("savedRotationZ")
 		);
 		if (!GameManager.started) {
-			GameManager.started = true;
-			savedPosition = startPosition;
-			savedRotation = startRotation;
-			PlayerPrefs.SetInt(GameManager.Minigame.toys.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.fire.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.guitar.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.pencil.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.hacky.ToString(), 0);
-			PlayerPrefs.SetInt("score", 0);
-			PlayerPrefs.SetFloat("gameTime", 0f);
-			this.score = 0;
+			savedPosition = introPosition;
+			savedRotation = introRotation;
 		}
 	}
 
@@ -70,13 +102,14 @@ public class GameManagerRoom : GameManager {
 	 */
 	public override void Start () {
 		base.Start();
+		GUI.ChangeTo(GUIManager.State.loading);
 		if (character) {
-			character.transform.localPosition = savedPosition;
-			character.transform.Rotate(savedRotation);
+			RepositionCharacter();
+			if (!GameManager.started) {
+				character.Sit();
+			}
 		}
-		if (GUI) {
-			GUI.ChangeTo(GUIManager.State.gameplay);
-		}
+		StartCoroutine(LateStart());
 	}
 
 	/**
@@ -86,8 +119,14 @@ public class GameManagerRoom : GameManager {
 		base.FixedUpdate();
 		if (!GameManager.paused) {
 			// Character movement
-			if (character) {
+			if (started && character) {
 				character.SetMovement(inputs.movement);
+			}
+		}
+		if (GUI.state == GUIManager.State.logo) {
+			logoTimer += Time.deltaTime;
+			if (logoTimer >= logoTime) {
+				StartGame();
 			}
 		}
 	}
@@ -99,27 +138,38 @@ public class GameManagerRoom : GameManager {
    * @param int                    value  Value related to button.
    */
   public void OnButtonPress (InputManager.GUIAction action, int value) {
-    switch (action) {
-    	case InputManager.GUIAction.next:
-    		switch (GameManager.minigame) {
-    			case GameManager.Minigame.toys:
-    				StartCoroutine(LateEnd("minigameToys", 0f));
-    				break;
-    			case GameManager.Minigame.guitar:
-    				StartCoroutine(LateEnd("minigameGuitar", 0f));
-    				break;
-    			case GameManager.Minigame.fire:
-    				StartCoroutine(LateEnd("minigameFire", 0f));
-    				break;
-    			case GameManager.Minigame.pencil:
-    				StartCoroutine(LateEnd("minigamePencil", 0f));
-    				break;
-    			case GameManager.Minigame.hacky:
-    				StartCoroutine(LateEnd("minigameHacky", 0f));
-    				break;
-    		}
-    		break;
-    }
+  	switch (GUI.state) {
+  		case GUIManager.State.gameplay:
+		    switch (action) {
+		    	case InputManager.GUIAction.next:
+		    		switch (GameManager.minigame) {
+		    			case GameManager.Minigame.toys:
+		    				StartCoroutine(LateEnd("minigameToys", 0f));
+		    				break;
+		    			case GameManager.Minigame.guitar:
+		    				StartCoroutine(LateEnd("minigameGuitar", 0f));
+		    				break;
+		    			case GameManager.Minigame.fire:
+		    				StartCoroutine(LateEnd("minigameFire", 0f));
+		    				break;
+		    			case GameManager.Minigame.pencil:
+		    				StartCoroutine(LateEnd("minigamePencil", 0f));
+		    				break;
+		    			case GameManager.Minigame.hacky:
+		    				StartCoroutine(LateEnd("minigameHacky", 0f));
+		    				break;
+		    		}
+		    		break;
+		    }
+		    break;
+  		case GUIManager.State.welcome:
+		    switch (action) {
+		    	case InputManager.GUIAction.next:
+		    		BeginGame();
+		    		break;
+		    }
+		    break;
+	  }
   }
 
   /**
@@ -134,6 +184,34 @@ public class GameManagerRoom : GameManager {
    */
   public void OnDisable (){
     ButtonListener.On_ButtonPress -= OnButtonPress;
+  }
+
+  /**
+   * Starts game
+   */
+  public void StartGame () {
+  	if (audio) {
+  		audio.clip = clipLighter;
+  		audio.Play();
+  	}
+  	GUI.ChangeTo(GUIManager.State.gameplay);
+		if (!GameManager.started) {
+			GameManager.started = true;
+			character.ShowCandle();
+			savedPosition = startPosition;
+			savedRotation = startRotation;
+			PlayerPrefs.SetInt(GameManager.Minigame.toys.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.fire.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.guitar.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.pencil.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.hacky.ToString(), 0);
+			PlayerPrefs.SetInt("score", 0);
+			PlayerPrefs.SetFloat("gameTime", 0f);
+			this.score = 0;
+			this.timer = 0f;
+			TimerChange(1f);
+		}
+		RepositionCharacter();
   }
 
   /**
@@ -153,5 +231,43 @@ public class GameManagerRoom : GameManager {
 		PlayerPrefs.SetFloat("savedRotationZ", character.transform.rotation.z);
   	return base.LateEnd(levelName, seconds);
   }
+
+  /**
+   * Transitions to next level after animations have occured.
+   *
+   * @param string levelName Level name.
+   */
+  public IEnumerator LateStart () {
+		yield return new WaitForSeconds(1f);
+		if (GUI) {
+			if (GameManager.started) {
+				GUI.ChangeTo(GUIManager.State.gameplay);
+			} else {
+				GUI.ChangeTo(GUIManager.State.welcome);
+			}
+		}
+  }
+
+  /**
+   * Begin game
+   */
+  private void BeginGame () {
+  	On_GameBegin();
+  	logoTimer = 0f;
+		character.Unsit();
+  	GUI.ChangeTo(GUIManager.State.logo);
+  	if (audio) {
+  		audio.clip = clipOutage;
+  		audio.Play();
+  	}
+  }
+
+  /**
+   * Repositions character to location and rotation
+   */
+ 	private void RepositionCharacter () {
+		character.transform.localPosition = savedPosition;
+		character.transform.Rotate(savedRotation);
+ 	}
 
 }

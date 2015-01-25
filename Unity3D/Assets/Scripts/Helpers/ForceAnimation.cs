@@ -11,7 +11,7 @@ public class ForceAnimation : MonoBehaviour {
 	/**
 	 * Animation start.
 	 */
-	public string name;
+	public string variable;
 
 	/**
 	 * Animator
@@ -30,7 +30,7 @@ public class ForceAnimation : MonoBehaviour {
 	 */
 	public void Start () {
 		if (animator) {
-			animator.SetBool(name, true);
+			animator.SetBool(variable, true);
 		}
 	}
 

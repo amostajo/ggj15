@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour {
 	// Character
 	public static string tagCharacter = "character";
 
+	// Mian candle
+	public static string tagCandle = "candle";
+
 	/**
 	 * On score update event.
 	 */

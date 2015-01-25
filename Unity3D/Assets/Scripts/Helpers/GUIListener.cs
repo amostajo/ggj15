@@ -45,11 +45,17 @@ public class GUIListener : MonoBehaviour {
 	private UIPanel panel;
 
 	/**
+	 * Buttons in panel
+	 */
+	private UIButton[] buttons;
+
+	/**
 	 * Unity Awake
 	 */
 	public void Awake() {
 		animator = GetComponent<Animator>();
 		panel = GetComponent<UIPanel>();
+		buttons = GetComponentsInChildren<UIButton>();
 	}
 
 	/**
@@ -92,9 +98,13 @@ public class GUIListener : MonoBehaviour {
 				break;
 			}
 		}
+		for (index = buttons.Length -1; index >= 0; --index) {
+			buttons[index].gameObject.SetActive(show);
+		}
 		if (show) {
 			onHide = false;
 			panel.enabled = true;
+
 		} else {
 			onHide = true;
 			timer = 0f;

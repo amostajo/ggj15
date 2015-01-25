@@ -78,7 +78,6 @@ public class InputManager : MonoBehaviour {
       case Scheme.desktop:
         this.UpdateDesktop();
         break;
-        break;
       default:
         break;
     }

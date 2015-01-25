@@ -54,11 +54,17 @@ public class Character : MonoBehaviour {
 	private Animator animator;
 
 	/**
+	 * Candle object.
+	 */
+	private GameObject candle;
+
+	/**
 	 * Unity Awake
 	 */
 	public void Awake () {
 		controller = GetComponent<CharacterController>();
 		animator = GetComponentInChildren<Animator>();
+		candle = GameObject.FindWithTag(GameManager.tagCandle);
 	}
 
 	/**
@@ -100,6 +106,45 @@ public class Character : MonoBehaviour {
 		oldRotation = transform.rotation;
 		transform.LookAt(transform.localPosition + direction);
 		newRotation = transform.rotation;	
+	}
+
+	/**
+	 * Makes character sit.
+	 */
+	public void Sit () {
+		if (animator) {
+			animator.SetBool("sit", true);
+			animator.SetLayerWeight(1, 0f);
+		}
+		HideCandle();
+	}
+
+	/**
+	 * Makes character unsit.
+	 */
+	public void Unsit () {
+		if (animator) {
+			animator.SetBool("sit", false);
+			animator.SetLayerWeight(1, 1f);
+		}
+	}
+
+	/**
+	 * Hides candle
+	 */
+	public void HideCandle () {
+		if (candle) {
+			candle.SetActive(false);
+		}
+	}
+
+	/**
+	 * Show candle
+	 */
+	public void ShowCandle () {
+		if (candle && !candle.activeSelf) {
+			candle.SetActive(true);
+		}
 	}
 
 }
