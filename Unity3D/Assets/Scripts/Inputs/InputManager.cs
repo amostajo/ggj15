@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour {
   /**
    * Game inputs.
    */
-  private InputKeys keys;
+  public InputKeys keys;
 
   /**
    * Flag that indicates if player can move
@@ -115,6 +115,12 @@ public class InputManager : MonoBehaviour {
       }
       this.keyCheck = true;
       this.keySuccess = Input.GetKeyDown((KeyCode)keys.correct);
+      if (this.keySuccess) {
+        keys.lastUsed = keys.correct;
+      }
+      if (Input.GetKeyUp((KeyCode)keys.lastUsed)) {
+        this.keyCheck = false;
+      }
     } 
 
     // Back
@@ -141,6 +147,7 @@ public class InputManager : MonoBehaviour {
         break;
 
     }
+    keyCheck = false;
   }
 
   /**

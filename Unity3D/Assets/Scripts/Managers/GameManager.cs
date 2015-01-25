@@ -75,6 +75,11 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public GUIManager GUI;
 
+	/**
+	 * Flag that indicates if game finished.
+	 */
+	private bool finished;
+
 	/** 
 	 * Returns game manager in scene.
 	 */
@@ -150,6 +155,23 @@ public class GameManager : MonoBehaviour {
 		if (hasGlobalTimer) {
 			PlayerPrefs.SetFloat("gameTime", timer);
 		}
+		// Check end
+		switch (GameManager.minigame) {
+			case GameManager.Minigame.toys:
+				break;
+			case GameManager.Minigame.guitar:
+				On_TimerChange(0f);
+				Animator aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
+				aux.SetBool("playGuitar", false);
+				StartCoroutine(LateEnd("room", 2f));
+				break;
+			case GameManager.Minigame.fire:
+				break;
+			case GameManager.Minigame.pencil:
+				break;
+			case GameManager.Minigame.hacky:
+				break;
+		}
 	}
 
 	/**
@@ -167,4 +189,17 @@ public class GameManager : MonoBehaviour {
 	public void TimerChange (float ratio) {
 		On_TimerChange(ratio);
 	}
+
+  /**
+   * Transitions to next level after animations have occured.
+   *
+   * @param string levelName Level name.
+   */
+  public virtual IEnumerator LateEnd (string levelName, float seconds) {
+  	if (seconds > 0f)
+  		yield return new WaitForSeconds(seconds);
+  	GUI.ChangeTo(GUIManager.State.loading);
+  	yield return new WaitForSeconds(1f);
+  	Application.LoadLevel(levelName);
+  }
 }

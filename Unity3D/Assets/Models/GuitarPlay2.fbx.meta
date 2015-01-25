@@ -432,7 +432,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .00100000005
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -618,257 +618,257 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hip
-      position: {x: -.000219186186, y: 8.96859169, z: 0}
+      position: {x: -2.19186204e-05, y: .896859229, z: 0}
       rotation: {x: 0, y: 0, z: .238712102, w: .971090376}
       scale: {x: 1, y: .999999881, z: 1}
       transformModified: 1
     - name: Spline
-      position: {x: .710179508, y: 1.35675919, z: -.344384611}
+      position: {x: .0710179582, y: .135675937, z: -.0344384648}
       rotation: {x: .278926551, y: -.649769187, z: -.548385501, w: .446400464}
       scale: {x: 1.00000036, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: Spline2
-      position: {x: -2.88182998, y: 2.84217088e-16, z: 1.26217742e-31}
+      position: {x: -.288183033, y: 2.84217108e-17, z: 1.26217751e-32}
       rotation: {x: -.963938475, y: .266125351, z: 3.3426943e-08, w: 2.56709249e-08}
       scale: {x: .999999762, y: .999999702, z: .999999881}
       transformModified: 1
     - name: Neck
-      position: {x: -1.90839684, y: 0, z: -1.08703801e-16}
+      position: {x: -.190839708, y: 0, z: -1.08703808e-17}
       rotation: {x: 1.22245769e-08, y: -4.55082976e-08, z: -.071111761, w: .997468352}
       scale: {x: 1.00000024, y: 1, z: 1}
       transformModified: 1
     - name: Neck2
-      position: {x: -1.74149263, y: -1.13686835e-15, z: -4.43948099e-17}
+      position: {x: -.174149275, y: -1.13686843e-16, z: -4.43948124e-18}
       rotation: {x: -5.8525746e-08, y: 6.06643624e-08, z: -.0413697883, w: .999143958}
       scale: {x: .99999994, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: Head
-      position: {x: -2.23457551, y: 5.68434176e-16, z: -1.54567664e-17}
+      position: {x: -.223457575, y: 5.68434216e-17, z: -1.54567683e-18}
       rotation: {x: -2.9262873e-08, y: 3.03321812e-08, z: -.0055977921, w: .999984384}
       scale: {x: 1.00000012, y: .99999994, z: .999999881}
       transformModified: 1
     - name: joint13
-      position: {x: -3.71157408, y: 8.88178367e-17, z: -1.63231008e-17}
+      position: {x: -.371157438, y: 8.88178483e-18, z: -1.63231024e-18}
       rotation: {x: .493790507, y: -.506133378, z: .493790507, w: .506133318}
       scale: {x: 1.00000012, y: .999999881, z: 1}
       transformModified: 1
     - name: Arm_L
-      position: {x: -2.21728683, y: -.582145631, z: -1.96585739}
+      position: {x: -.221728697, y: -.0582145676, z: -.19658576}
       rotation: {x: .388097137, y: -.529924154, z: .482085437, w: .579788566}
       scale: {x: 1.00000024, y: 1.00000036, z: 1.00000024}
       transformModified: 1
     - name: ForeArm_L
-      position: {x: -3.2832222, y: -4.54747341e-15, z: -.572661459}
+      position: {x: -.328322262, y: -4.54747372e-16, z: -.0572661497}
       rotation: {x: -.00258600316, y: -.0881452337, z: -.0439917669, w: .995132446}
       scale: {x: .999999702, y: .999999762, z: 1}
       transformModified: 1
     - name: Wrist_L
-      position: {x: -3.51655722, y: -.0325470455, z: .393267363}
+      position: {x: -.351655751, y: -.00325470488, z: .0393267386}
       rotation: {x: 3.10017576e-08, y: 4.58037874e-08, z: .0180474948, w: .99983716}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: Wrist_L1
-      position: {x: -.884924889, y: .0814536288, z: .209031671}
+      position: {x: -.0884924978, y: .008145364, z: .0209031682}
       rotation: {x: -3.55984788e-08, y: -3.83169194e-08, z: 2.07019344e-08, w: 1}
       scale: {x: .99999994, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Wrist_L7
-      position: {x: .0524367169, y: -.412073344, z: .474563867}
+      position: {x: .00524367206, y: -.0412073396, z: .0474563912}
       rotation: {x: .675352275, y: .591709256, z: -.106661618, w: .427086353}
       scale: {x: 1.00000024, y: 1.00000036, z: 1}
       transformModified: 1
     - name: Wrist_L3 3
-      position: {x: -.416796148, y: -.136007637, z: .0555739999}
+      position: {x: -.041679617, y: -.0136007648, z: .00555740064}
       rotation: {x: -1.83225346e-08, y: -5.57359776e-08, z: 3.41023672e-08, w: 1}
       scale: {x: 1, y: .999999881, z: 1}
       transformModified: 1
     - name: Wrist_L4 3
-      position: {x: -.395378381, y: -.380053103, z: -.0520151332}
+      position: {x: -.0395378433, y: -.0380053148, z: -.00520151388}
       rotation: {x: -1.4855412e-08, y: 3.67236446e-08, z: 1.31704159e-08, w: 1}
       scale: {x: 1.00000024, y: 1, z: 1}
       transformModified: 1
     - name: Wrist_L6
-      position: {x: -.750655293, y: -.228969738, z: .353873551}
+      position: {x: -.0750655383, y: -.0228969753, z: .0353873596}
       rotation: {x: 5.75915458e-08, y: .0986252502, z: -6.04163617e-08, w: .995124698}
       scale: {x: 1, y: .999999881, z: .999999881}
       transformModified: 1
     - name: Wrist_L3 2
-      position: {x: -.423095465, y: -.210176021, z: -.0393866226}
+      position: {x: -.0423095487, y: -.0210176036, z: -.00393866282}
       rotation: {x: -1.40709631e-08, y: 2.02841122e-08, z: 1.78602253e-08, w: 1}
       scale: {x: 1, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: Wrist_L4 2
-      position: {x: -.395378381, y: -.380053103, z: -.0520151332}
+      position: {x: -.0395378433, y: -.0380053148, z: -.00520151388}
       rotation: {x: -3.00239078e-09, y: 4.57670835e-09, z: 4.05592671e-09, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Wrist_L5
-      position: {x: -1.03453183, y: -.102915913, z: .0735834688}
+      position: {x: -.103453189, y: -.0102915922, z: .00735834753}
       rotation: {x: .0232540723, y: .0653650314, z: .143550009, w: .987208188}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: Wrist_L3 1
-      position: {x: -.471315324, y: 0, z: -2.84217088e-16}
+      position: {x: -.0471315384, y: 0, z: -2.84217108e-17}
       rotation: {x: .000469689869, y: .00065469736, z: .13583754, w: .990730882}
       scale: {x: .999999881, y: .99999994, z: 1}
       transformModified: 1
     - name: Wrist_L4 1
-      position: {x: -.607582986, y: -4.54747341e-15, z: -2.84217088e-16}
+      position: {x: -.0607583039, y: -4.54747372e-16, z: -2.84217108e-17}
       rotation: {x: -.0322872251, y: -.0623141378, z: -.276303947, w: .958504379}
       scale: {x: .999999821, y: .99999994, z: .999999881}
       transformModified: 1
     - name: Wrist_L2
-      position: {x: -1.01260591, y: .0426945202, z: -.341700345}
+      position: {x: -.101260602, y: .0042694523, z: -.034170039}
       rotation: {x: .0240615755, y: .067892462, z: .142340496, w: .987193406}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: Wrist_L3
-      position: {x: -.468791902, y: 4.54747341e-15, z: 2.84217088e-16}
+      position: {x: -.0468791947, y: 4.54747372e-16, z: 2.84217108e-17}
       rotation: {x: -.00757733081, y: -.0130270142, z: .0430096164, w: .998961031}
       scale: {x: .999999702, y: .999999881, z: .99999994}
       transformModified: 1
     - name: Wrist_L4
-      position: {x: -.561309099, y: -4.54747341e-15, z: 8.52651264e-16}
+      position: {x: -.0561309159, y: -4.54747372e-16, z: 8.52651356e-17}
       rotation: {x: -.0213305149, y: -.0528482534, z: -.184852421, w: .98111248}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: Arm_R
-      position: {x: -2.21724319, y: -.582157314, z: 1.96585989}
+      position: {x: -.221724346, y: -.0582157373, z: .196586013}
       rotation: {x: .294674069, y: -.694066703, z: .524275482, w: .395694345}
       scale: {x: 1.00000012, y: .99999994, z: 1.00000024}
       transformModified: 1
     - name: ForeArm_R
-      position: {x: 2.73853683, y: -1.81105995, z: -.572660983}
+      position: {x: .273853719, y: -.181106016, z: -.057266105}
       rotation: {x: .0362881273, y: .0803720951, z: -.0862334296, w: .992364466}
       scale: {x: .99999994, y: 1.00000024, z: .999999881}
       transformModified: 1
     - name: Wrist_R
-      position: {x: 3.32485795, y: -1.1456424, z: .393266976}
+      position: {x: .332485825, y: -.114564247, z: .0393267013}
       rotation: {x: 3.07916537e-08, y: 5.74434189e-08, z: .0180474501, w: .99983716}
       scale: {x: .999999881, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: Wrist_R1
-      position: {x: .848172843, y: -.265190184, z: .209031597}
+      position: {x: .0848172903, y: -.026519021, z: .0209031608}
       rotation: {x: -3.55984753e-08, y: -2.66753926e-08, z: -2.37839899e-08, w: 1}
       scale: {x: 1.00000012, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Wrist_R7
-      position: {x: -.206892714, y: -.360220224, z: .47456339}
+      position: {x: -.0206892733, y: -.0360220261, z: .0474563427}
       rotation: {x: .675352275, y: .591709197, z: -.106661581, w: .427086413}
       scale: {x: 1, y: 1.00000024, z: 1.00000036}
       transformModified: 1
     - name: Wrist_R3 3
-      position: {x: -.378264427, y: .113455191, z: .198268414}
+      position: {x: -.037826445, y: .0113455197, z: .0198268425}
       rotation: {x: -6.86650736e-08, y: -4.85596396e-10, z: -2.0930111e-08, w: 1}
       scale: {x: 1, y: 1.00000012, z: 1.00000024}
       transformModified: 1
     - name: Wrist_R4 3
-      position: {x: -.287877917, y: .316847175, z: .346768916}
+      position: {x: -.0287877936, y: .031684719, z: .0346768945}
       rotation: {x: 5.61147075e-08, y: 2.07720401e-08, z: -1.67976335e-08, w: 1}
       scale: {x: 1.00000012, y: .999999881, z: 1}
       transformModified: 1
     - name: Wrist_R6
-      position: {x: .604822159, y: -.50002557, z: .353873402}
+      position: {x: .0604822226, y: -.05000256, z: .0353873447}
       rotation: {x: 5.53636568e-08, y: .0986252427, z: 3.6456143e-08, w: .995124638}
       scale: {x: .999999881, y: .999999762, z: .999999881}
       transformModified: 1
     - name: Wrist_R3 2
-      position: {x: .294537872, y: -.35657835, z: .104270838}
+      position: {x: .0294537898, y: -.035657838, z: .0104270848}
       rotation: {x: 2.53189492e-09, y: -3.27699978e-09, z: -2.84622326e-09, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Wrist_R4 2
-      position: {x: .21155858, y: -.503841937, z: .0694832131}
+      position: {x: .0211558603, y: -.0503841974, z: .00694832206}
       rotation: {x: 2.53189492e-09, y: -3.27699978e-09, z: -2.84622326e-09, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Wrist_R5
-      position: {x: .915352464, y: -.492886901, z: .0735833943}
+      position: {x: .0915352553, y: -.0492886938, z: .00735834008}
       rotation: {x: .0232540891, y: .065365091, z: .143550128, w: .987208188}
       scale: {x: .999999762, y: .999999881, z: .999999821}
       transformModified: 1
     - name: Wrist_R3 1
-      position: {x: .251413018, y: -.38193506, z: .114251487}
+      position: {x: .0251413044, y: -.038193509, z: .0114251496}
       rotation: {x: .000469692051, y: .000654686417, z: .135837555, w: .990730822}
       scale: {x: .99999994, y: .99999994, z: .99999994}
       transformModified: 1
     - name: Wrist_R4 1
-      position: {x: .019809816, y: -.594893396, z: .12226361}
+      position: {x: .00198098179, y: -.0594893433, z: .0122263618}
       rotation: {x: -.0322872922, y: -.0623141788, z: -.276303947, w: .958504379}
       scale: {x: 1.00000024, y: 1.00000012, z: 1}
       transformModified: 1
     - name: Wrist_R2
-      position: {x: .951163232, y: -.350035936, z: -.341700584}
+      position: {x: .0951163322, y: -.0350035951, z: -.0341700613}
       rotation: {x: .0240615904, y: .0678924546, z: .142340586, w: .987193465}
       scale: {x: .999999762, y: 1, z: 1}
       transformModified: 1
     - name: Wrist_R3
-      position: {x: .250761539, y: -.378136426, z: .11802195}
+      position: {x: .0250761565, y: -.0378136449, z: .0118021965}
       rotation: {x: -.00757739227, y: -.0130270161, z: .0430097021, w: .998961031}
       scale: {x: .999999762, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Wrist_R4
-      position: {x: .224226907, y: -.503303051, z: .106858678}
+      position: {x: .0224226918, y: -.0503303111, z: .0106858686}
       rotation: {x: -.0213305987, y: -.0528482981, z: -.184852511, w: .98111248}
       scale: {x: 1, y: .999999702, z: .999999881}
       transformModified: 1
     - name: Tight_R
-      position: {x: .953160763, y: -1.37356973, z: 0}
+      position: {x: .0953160822, y: -.137356982, z: 0}
       rotation: {x: 0, y: 0, z: .453712195, w: .891148329}
       scale: {x: .999999881, y: .999999762, z: 1}
       transformModified: 1
     - name: Reg_R
-      position: {x: -2.81666708, y: -.851972878, z: 0}
+      position: {x: -.281666726, y: -.0851972923, z: 0}
       rotation: {x: 0, y: 0, z: .00656915596, w: .999978423}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Foot_R
-      position: {x: -3.73797846, y: -1.0242722, z: 0}
+      position: {x: -.373797894, y: -.102427229, z: 0}
       rotation: {x: .461644948, y: .197320133, z: -.230846167, w: .83346194}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Foot2_R
-      position: {x: -1.58870113, y: -.320566058, z: .66476804}
+      position: {x: -.158870131, y: -.0320566073, z: .066476807}
       rotation: {x: .126545787, y: .263086259, z: -.414583296, w: .861912191}
       scale: {x: .999999762, y: 1, z: 1.00000024}
       transformModified: 1
     - name: joint6 1
-      position: {x: -1.43625271, y: 2.62560441e-16, z: -.100019008}
+      position: {x: -.143625289, y: 2.62560461e-17, z: -.0100019015}
       rotation: {x: -4.8210012e-08, y: -.732656777, z: 3.83876007e-08, w: .680598319}
       scale: {x: .999999881, y: 1, z: .99999994}
       transformModified: 1
     - name: Tight_L
-      position: {x: -1.67188942, y: 3.00146598e-06, z: 0}
+      position: {x: -.167188957, y: 3.00146638e-07, z: 0}
       rotation: {x: 0, y: 0, z: .453712195, w: .891148329}
       scale: {x: .999999881, y: .999999762, z: 1}
       transformModified: 1
     - name: Leg_L
-      position: {x: -2.942698, y: -4.21449158e-06, z: .194422051}
+      position: {x: -.29426983, y: -4.21449187e-07, z: .0194422062}
       rotation: {x: 0, y: 0, z: .00656915596, w: .999978423}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Foot_L
-      position: {x: -3.87577295, y: 6.66640346e-07, z: -.335436195}
+      position: {x: -.387577325, y: 6.66640432e-08, z: -.033543624}
       rotation: {x: .461644948, y: .197320133, z: -.230846167, w: .83346194}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Foot2_L
-      position: {x: -1.71851861, y: -.15808925, z: .300586432}
+      position: {x: -.171851873, y: -.0158089269, z: .0300586466}
       rotation: {x: .126545787, y: .263086259, z: -.414583296, w: .861912191}
       scale: {x: .999999762, y: 1, z: 1.00000024}
       transformModified: 1
     - name: joint6
-      position: {x: -1.43538153, y: 1.49558236e-15, z: -.111826912}
+      position: {x: -.143538162, y: 1.49558252e-16, z: -.0111826919}
       rotation: {x: -4.8210012e-08, y: -.732656777, z: 3.83876007e-08, w: .680598319}
       scale: {x: .999999881, y: 1, z: .99999994}
       transformModified: 1
     - name: group1
-      position: {x: .0645812005, y: 12.9778109, z: 2.52668977}
+      position: {x: .00645812042, y: 1.29778123, z: .252669007}
       rotation: {x: 0, y: 0, z: .429816127, w: .902916431}
       scale: {x: 7.00340366, y: 7.00340366, z: 7.00340366}
       transformModified: 1
     - name: Guitar
-      position: {x: -.0925210938, y: -.430500507, z: -.0116922362}
+      position: {x: -.0092521105, y: -.0430500545, z: -.00116922369}
       rotation: {x: -.702868581, y: .077304028, z: -.0773040131, w: .702868462}
       scale: {x: 100, y: 100, z: 100}
       transformModified: 1

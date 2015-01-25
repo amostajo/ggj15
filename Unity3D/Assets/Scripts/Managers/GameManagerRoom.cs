@@ -103,19 +103,19 @@ public class GameManagerRoom : GameManager {
     	case InputManager.GUIAction.next:
     		switch (GameManager.minigame) {
     			case GameManager.Minigame.toys:
-    				StartCoroutine(LateEnd("minigameToys"));
+    				StartCoroutine(LateEnd("minigameToys", 0f));
     				break;
     			case GameManager.Minigame.guitar:
-    				StartCoroutine(LateEnd("minigameGuitar"));
+    				StartCoroutine(LateEnd("minigameGuitar", 0f));
     				break;
     			case GameManager.Minigame.fire:
-    				StartCoroutine(LateEnd("minigameFire"));
+    				StartCoroutine(LateEnd("minigameFire", 0f));
     				break;
     			case GameManager.Minigame.pencil:
-    				StartCoroutine(LateEnd("minigamePencil"));
+    				StartCoroutine(LateEnd("minigamePencil", 0f));
     				break;
     			case GameManager.Minigame.hacky:
-    				StartCoroutine(LateEnd("minigameHacky"));
+    				StartCoroutine(LateEnd("minigameHacky", 0f));
     				break;
     		}
     		break;
@@ -141,10 +141,14 @@ public class GameManagerRoom : GameManager {
    *
    * @param string levelName Level name.
    */
-  public IEnumerator LateEnd (string levelName) {
-  	GUI.ChangeTo(GUIManager.State.loading);
-  	yield return new WaitForSeconds(1f);
-  	Application.LoadLevel(levelName);
+  public override IEnumerator LateEnd (string levelName, float seconds) {
+		PlayerPrefs.SetFloat("savedPositionX", character.transform.localPosition.x);
+		PlayerPrefs.SetFloat("savedPositionY", character.transform.localPosition.y);
+		PlayerPrefs.SetFloat("savedPositionZ", character.transform.localPosition.z);
+		PlayerPrefs.SetFloat("savedRotationX", character.transform.rotation.x);
+		PlayerPrefs.SetFloat("savedRotationY", character.transform.rotation.y);
+		PlayerPrefs.SetFloat("savedRotationZ", character.transform.rotation.z);
+  	return base.LateEnd(levelName, seconds);
   }
 
 }

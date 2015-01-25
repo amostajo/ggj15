@@ -16,13 +16,13 @@ public struct InputKeys {
 	/**
 	 * Key pressed by gamer.
 	 */
-	public int pressed;
+	public int lastUsed;
 
 	/**
 	 * Default construct.
 	 */
 	public InputKeys (int def) {
 		this.correct = def;
-		this.pressed = def;
+		this.lastUsed = def;
 	}
 }
