@@ -163,6 +163,7 @@ public class GameManager : MonoBehaviour {
 				On_TimerChange(0f);
 				Animator aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
 				aux.SetBool("playGuitar", false);
+				PlayerPrefs.SetInt(minigame.ToString(), 1);
 				StartCoroutine(LateEnd("room", 2f));
 				break;
 			case GameManager.Minigame.fire:

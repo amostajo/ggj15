@@ -113,14 +113,11 @@ public class InputManager : MonoBehaviour {
         this.move = true;
         this.movement += moveRight;
       }
+    } 
+
+    if (Input.anyKeyDown) {
       this.keyCheck = true;
       this.keySuccess = Input.GetKeyDown((KeyCode)keys.correct);
-      if (this.keySuccess) {
-        keys.lastUsed = keys.correct;
-      }
-      if (Input.GetKeyUp((KeyCode)keys.lastUsed)) {
-        this.keyCheck = false;
-      }
     } 
 
     // Back

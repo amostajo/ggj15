@@ -51,7 +51,7 @@ public class GameManagerRandom : GameManager {
 				timer = 0;
 				this.inputs.RequestKey();
 			} else {
-				//if not success, end the game
+				//if not success, end the game\
 				this.Finish();
 			}		
 		} else if (GameManager.paused) {

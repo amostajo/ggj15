@@ -1431,6 +1431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4e3870851df7b428c202cdd221a2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keys:
+    correct: 0
+    lastUsed: 0
   move: 0
   movement: {x: 0, y: 0, z: 0}
   keyCheck: 0
@@ -10289,6 +10292,7 @@ GameObject:
   - 4: {fileID: 861238127}
   - 33: {fileID: 861238129}
   - 23: {fileID: 861238128}
+  - 111: {fileID: 861238130}
   m_Layer: 0
   m_Name: haki
   m_TagString: Untagged
@@ -10337,6 +10341,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 123486826}
   m_GameObject: {fileID: 861238126}
   m_Mesh: {fileID: 4300000, guid: e0a319a7f6a4c6345a2e19aaa9948843, type: 3}
+--- !u!111 &861238130
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11100000, guid: e0a319a7f6a4c6345a2e19aaa9948843,
+    type: 3}
+  m_PrefabInternal: {fileID: 123486826}
+  m_GameObject: {fileID: 861238126}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &873213702
 GameObject:
   m_ObjectHideFlags: 0

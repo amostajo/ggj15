@@ -30,17 +30,23 @@ public class MinigameTrigger : MonoBehaviour {
 	private GameManager game;
 
 	/**
+	 * Flag that indicates if minigame has already been played.
+	 */
+	private bool played;
+
+	/**
 	 * Inits.
 	 */
 	public void Awake () {
 		game = GameManager.Get();
+		played = PlayerPrefs.GetInt(minigame.ToString()) == 1;
 	}
 
 	/**
 	 * Unity on trigger enter.
 	 */
 	public void OnTriggerEnter (Collider collider) {
-		if (collider.tag == GameManager.tagCharacter) {
+		if (!played && collider.tag == GameManager.tagCharacter) {
 			On_MinigameTriggered(minigame, message);
 			game.GUI.ChangeTo(GUIManager.State.message);
 			GameManager.minigame = minigame;
@@ -51,7 +57,7 @@ public class MinigameTrigger : MonoBehaviour {
 	 * Unity on trigger enter.
 	 */
 	public void OnTriggerExit (Collider collider) {
-		if (collider.tag == GameManager.tagCharacter) {
+		if (!played &&collider.tag == GameManager.tagCharacter) {
 			game.GUI.ChangeTo(GUIManager.State.gameplay);
 		}
 	}

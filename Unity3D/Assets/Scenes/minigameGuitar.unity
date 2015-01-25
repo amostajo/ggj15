@@ -879,6 +879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4e3870851df7b428c202cdd221a2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keys:
+    correct: 0
+    lastUsed: 0
   move: 0
   movement: {x: 0, y: 0, z: 0}
   keyCheck: 0
