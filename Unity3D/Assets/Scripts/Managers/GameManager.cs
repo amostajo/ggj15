@@ -86,9 +86,10 @@ public class GameManager : MonoBehaviour {
 	public GUIManager GUI;
 
 	/**
-	 * Flag that indicates if game finished.
+	 * Flag that indicates if game hasFinished.
 	 */
-	private bool finished;
+	[HideInInspector]
+	public bool hasFinished;
 
 	/** 
 	 * Returns game manager in scene.
@@ -168,53 +169,56 @@ public class GameManager : MonoBehaviour {
 	}
 
 	/**
-	 * Called when game has finished.
+	 * Called when game has hasFinished.
 	 */
 	public virtual void Finish () {
-    if (audio) {
-      audio.clip = clipFail;
-      audio.Play();
-    }
-		PlayerPrefs.SetInt("score", score);
-		// Check end
-		switch (GameManager.minigame) {
-			case GameManager.Minigame.toys:
-				paused = true;
-				On_TimerChange(0f);
-				PlayerPrefs.SetInt(minigame.ToString(), 1);
-				StartCoroutine(LateEnd("room", 1f));
-				break;
-			case GameManager.Minigame.guitar:
-				paused = true;
-				On_TimerChange(0f);
-				Animator aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
-				aux.SetBool("playGuitar", false);
-				PlayerPrefs.SetInt(minigame.ToString(), 1);
-				StartCoroutine(LateEnd("room", 2f));
-				break;
-			case GameManager.Minigame.fire:
-				paused = true;
-				On_TimerChange(0f);
-				PlayerPrefs.SetInt(minigame.ToString(), 1);
-				StartCoroutine(LateEnd("room", 1f));
-				break;
-			case GameManager.Minigame.pencil:
-				paused = true;
-				On_TimerChange(0f);
-  			GUI.ChangeTo(GUIManager.State.loading);
-				PlayerPrefs.SetInt(minigame.ToString(), 1);
-				StartCoroutine(LateEnd("room", 1f));
-				break;
-			case GameManager.Minigame.hacky:
-				paused = true;
-				On_TimerChange(0f);
-				aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
-				aux.SetBool("playHacky", false);
-				aux = GameObject.FindWithTag("ball").GetComponentInChildren<Animator>();
-				aux.SetBool("playHacky", false);
-				PlayerPrefs.SetInt(minigame.ToString(), 1);
-				StartCoroutine(LateEnd("room", 2f));
-				break;
+		if (!hasFinished) {
+			hasFinished = true;
+	    if (audio) {
+	      audio.clip = clipFail;
+	      audio.Play();
+	    }
+			PlayerPrefs.SetInt("score", score);
+			// Check end
+			switch (GameManager.minigame) {
+				case GameManager.Minigame.toys:
+					paused = true;
+					On_TimerChange(0f);
+					PlayerPrefs.SetInt(minigame.ToString(), 1);
+					StartCoroutine(LateEnd("room", 1f));
+					break;
+				case GameManager.Minigame.guitar:
+					paused = true;
+					On_TimerChange(0f);
+					Animator aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
+					aux.SetBool("playGuitar", false);
+					PlayerPrefs.SetInt(minigame.ToString(), 1);
+					StartCoroutine(LateEnd("room", 2f));
+					break;
+				case GameManager.Minigame.fire:
+					paused = true;
+					On_TimerChange(0f);
+					PlayerPrefs.SetInt(minigame.ToString(), 1);
+					StartCoroutine(LateEnd("room", 1f));
+					break;
+				case GameManager.Minigame.pencil:
+					paused = true;
+					On_TimerChange(0f);
+	  			GUI.ChangeTo(GUIManager.State.loading);
+					PlayerPrefs.SetInt(minigame.ToString(), 1);
+					StartCoroutine(LateEnd("room", 1f));
+					break;
+				case GameManager.Minigame.hacky:
+					paused = true;
+					On_TimerChange(0f);
+					aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
+					aux.SetBool("playHacky", false);
+					aux = GameObject.FindWithTag("ball").GetComponentInChildren<Animator>();
+					aux.SetBool("playHacky", false);
+					PlayerPrefs.SetInt(minigame.ToString(), 1);
+					StartCoroutine(LateEnd("room", 2f));
+					break;
+			}
 		}
 	}
 
