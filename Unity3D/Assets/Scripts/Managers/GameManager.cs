@@ -201,6 +201,7 @@ public class GameManager : MonoBehaviour {
   		yield return new WaitForSeconds(seconds);
   	GUI.ChangeTo(GUIManager.State.loading);
   	yield return new WaitForSeconds(1f);
+  	paused = false;
   	Application.LoadLevel(levelName);
   }
 }
