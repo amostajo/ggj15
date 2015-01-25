@@ -4,9 +4,15 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Carpet
+    100004: group3
     400000: //RootNode
+    400002: Carpet
+    400004: group3
     2300000: //RootNode
+    2300002: Carpet
     3300000: //RootNode
+    3300002: Carpet
     4300000: Carpet
     9500000: //RootNode
   materials:
@@ -28,7 +34,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

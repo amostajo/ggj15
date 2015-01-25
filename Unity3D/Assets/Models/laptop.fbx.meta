@@ -4,9 +4,15 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: group2
+    100004: Laptop
     400000: //RootNode
+    400002: group2
+    400004: Laptop
     2300000: //RootNode
+    2300002: Laptop
     3300000: //RootNode
+    3300002: Laptop
     4300000: Laptop
     9500000: //RootNode
   materials:
@@ -28,7 +34,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

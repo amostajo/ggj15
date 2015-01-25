@@ -4,9 +4,15 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: BedNightTable
+    100004: group1
     400000: //RootNode
+    400002: BedNightTable
+    400004: group1
     2300000: //RootNode
+    2300002: BedNightTable
     3300000: //RootNode
+    3300002: BedNightTable
     4300000: BedNightTable
     9500000: //RootNode
   materials:
@@ -28,7 +34,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

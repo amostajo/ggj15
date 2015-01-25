@@ -4,9 +4,15 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Candle
+    100004: group2
     400000: //RootNode
+    400002: Candle
+    400004: group2
     2300000: //RootNode
+    2300002: Candle
     3300000: //RootNode
+    3300002: Candle
     4300000: Candle
     9500000: //RootNode
   materials:
