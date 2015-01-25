@@ -38,11 +38,20 @@ public class GameManagerRepetitive : GameManager {
     //Ends game on mistake
     public void Update()
     {
+		/*
+		 *  if the game is paused and theres a input to check
+		 */
         if (GameManager.paused && this.inputs.keyCheck)
         {
+			/*
+		 *  if the user press the correct key, put the game to play 
+		 */
             if (this.inputs.keySuccess)
             {
                 GameManager.paused = false;
+				/*
+				 * for minigame of finger 
+				 */ 
                 if (pusher && pusher.rigidbody)
                 {
                     pusher.force = -5;
@@ -53,11 +62,17 @@ public class GameManagerRepetitive : GameManager {
             if (this.inputs.keySuccess)
             {
                 AddScore(1);
+				/*
+				 * for minigame of finger 
+				 */ 
                 if (pusher && pusher.rigidbody)
                 {
                     pusher.rigidbody.AddForce(direction*force);
                     force += force*forceFactor;
                 }
+				/*
+				 * for minigame of toys 
+				 */ 
 				else if(destruct && destruct.health <= 0){
 						destruct.isDestroyed = true;
 						AddScore(lastPoints);
