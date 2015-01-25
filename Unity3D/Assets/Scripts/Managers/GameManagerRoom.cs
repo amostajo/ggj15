@@ -74,6 +74,9 @@ public class GameManagerRoom : GameManager {
 			character.transform.localPosition = savedPosition;
 			character.transform.Rotate(savedRotation);
 		}
+		if (GUI) {
+			GUI.ChangeTo(GUIManager.State.gameplay);
+		}
 	}
 
 	/**

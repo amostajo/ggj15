@@ -41,9 +41,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 28b53c92ece7fd8468fad93b27b20d50, type: 2}
   mSprites:
+  - name: black
+    x: 151
+    y: 402
+    width: 110
+    height: 110
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: clock
     x: 0
-    y: 90
+    y: 346
     width: 150
     height: 166
     borderLeft: 0
@@ -55,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: clocktimer
-    x: 302
-    y: 29
+    x: 262
+    y: 403
     width: 109
     height: 109
     borderLeft: 0
@@ -68,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: key
-    x: 151
-    y: 106
+    x: 0
+    y: 195
     width: 150
     height: 150
     borderLeft: 0
@@ -81,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: keytimer
-    x: 302
-    y: 139
+    x: 0
+    y: 77
     width: 117
     height: 117
     borderLeft: 0
