@@ -58,6 +58,10 @@ public void Update()
             {
                 pusher.force = -5;
             }
+            if (destruct && destruct.rigidbody)
+            {
+                destruct.impact = 29;
+            }
         }
     }
 		/*
@@ -83,11 +87,6 @@ public void Update()
 				if(destruct && destruct.health >= 0 && !destruct.isDestroyed){
 					destruct.rigidbody.AddForce(destruct.direction * force);
 					force += force*forceFactor;
-						//if there 
-                    if (destruct.collisionExist){
-                        timer = 0f;
-                        destruct.collisionExist = false;
-                   }
 				}
 			}
         }
