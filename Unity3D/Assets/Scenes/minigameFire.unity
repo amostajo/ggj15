@@ -323,6 +323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4e3870851df7b428c202cdd221a2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keys:
+    correct: 0
+    lastUsed: 0
   move: 0
   movement: {x: 0, y: 0, z: 0}
   keyCheck: 0
@@ -347,10 +350,10 @@ MonoBehaviour:
   GUI: {fileID: 0}
   force: -3.5
   forceFactor: .0149999997
-  lastPoints: 5
-  timeToLose: 1.5
-  changeTime: 1
-  timelimit: .5
+  lastPoints: 0
+  timeToLose: Infinity
+  changeTime: 0
+  timelimit: 1
 --- !u!4 &296295188
 Transform:
   m_ObjectHideFlags: 0
