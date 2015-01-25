@@ -1714,6 +1714,7 @@ MonoBehaviour:
   logoTime: 4
   clipOutage: {fileID: 8300000, guid: 90e6a19821245fd47b81e120d99c57ae, type: 3}
   clipLighter: {fileID: 8300000, guid: eb6c14babe38ae44fb33369bff7f23ca, type: 3}
+  clipPowerBack: {fileID: 8300000, guid: e71db0f517a69684381d85eaffb0d62a, type: 3}
 --- !u!4 &296295188
 Transform:
   m_ObjectHideFlags: 0

@@ -62,6 +62,11 @@ public class GameManagerRoom : GameManager {
 	public AudioClip clipLighter;
 
 	/**
+	 * Audio sound to be played when lighter is up.
+	 */
+	public AudioClip clipPowerBack;
+
+	/**
 	 * Saved position where character should spawn.
 	 */
 	private Vector3 savedPosition;
@@ -251,6 +256,10 @@ public class GameManagerRoom : GameManager {
   	base.End();
   	character.Stop();
   	On_GameEnd();
+  	if (audio) {
+  		audio.clip = clipPowerBack;
+  		audio.Play();
+  	}
 		PlayerPrefs.SetInt("score", 0);
   	StartCoroutine(ShowEndMessage());
   }
