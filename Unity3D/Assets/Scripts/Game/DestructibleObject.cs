@@ -26,6 +26,8 @@ public class DestructibleObject : MonoBehaviour {
 
 	public bool collisionWall;
 
+    public bool collisionExist;
+
 	//Assigns horizontal movement to finger
 	public Vector3 direction = new Vector3(0f, 0f, 1f);
 	
@@ -53,7 +55,7 @@ public class DestructibleObject : MonoBehaviour {
 				}
 		}
 
-	public void FixedUpdate () 
+    public void FixedUpdate()
     {
         //Sets timer for game end and frequency for impact gain
         if (!GameManager.paused && rigidbody)
@@ -66,12 +68,7 @@ public class DestructibleObject : MonoBehaviour {
                 impact += impact * impactFactor;
             }
         }
-        //This is for the game to end if the player doesn't manage contact between the blocks
-        if (!OnCollisionEnter && timer = timer + 10f)
-        {
-            Finish();
-        }
-	}
+    }
 
 
     //This method causes damage to be inflicted to both blocks and the forces to become stronger on contact
@@ -79,6 +76,7 @@ public class DestructibleObject : MonoBehaviour {
 		this.health -= reduceHealth;
 		rigidbody.AddForce (-direction * impact);
 		impact += impact * impactFactor;
+        collisionExist = true;
 	}
 
     //Sets velocity to zero on Walls to give more chance to players and attempt to avoid wall passing glitch
@@ -86,7 +84,6 @@ public class DestructibleObject : MonoBehaviour {
 		rigidbody.velocity = Vector3.zero;
 		rigidbody.angularVelocity = Vector3.zero;
 	}
-
 
 
 }

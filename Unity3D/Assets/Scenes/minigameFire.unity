@@ -348,6 +348,9 @@ MonoBehaviour:
   force: -3.5
   forceFactor: .0149999997
   lastPoints: 5
+  timeToLose: 1.5
+  changeTime: 1
+  timelimit: .5
 --- !u!4 &296295188
 Transform:
   m_ObjectHideFlags: 0
