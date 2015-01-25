@@ -152,14 +152,12 @@ public class GameManager : MonoBehaviour {
 	 */
 	public virtual void Finish () {
 		PlayerPrefs.SetInt("score", score);
-		if (hasGlobalTimer) {
-			PlayerPrefs.SetFloat("gameTime", timer);
-		}
 		// Check end
 		switch (GameManager.minigame) {
 			case GameManager.Minigame.toys:
 				break;
 			case GameManager.Minigame.guitar:
+				paused = true;
 				On_TimerChange(0f);
 				Animator aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
 				aux.SetBool("playGuitar", false);
@@ -169,6 +167,10 @@ public class GameManager : MonoBehaviour {
 			case GameManager.Minigame.fire:
 				break;
 			case GameManager.Minigame.pencil:
+				paused = true;
+				On_TimerChange(0f);
+				PlayerPrefs.SetInt(minigame.ToString(), 1);
+				StartCoroutine(LateEnd("room", 2f));
 				break;
 			case GameManager.Minigame.hacky:
 				break;

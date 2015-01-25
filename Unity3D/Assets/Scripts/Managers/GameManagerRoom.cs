@@ -142,6 +142,9 @@ public class GameManagerRoom : GameManager {
    * @param string levelName Level name.
    */
   public override IEnumerator LateEnd (string levelName, float seconds) {
+		if (hasGlobalTimer) {
+			PlayerPrefs.SetFloat("gameTime", timer);
+		}
 		PlayerPrefs.SetFloat("savedPositionX", character.transform.localPosition.x);
 		PlayerPrefs.SetFloat("savedPositionY", character.transform.localPosition.y);
 		PlayerPrefs.SetFloat("savedPositionZ", character.transform.localPosition.z);
