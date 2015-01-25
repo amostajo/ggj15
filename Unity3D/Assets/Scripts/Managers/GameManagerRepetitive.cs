@@ -67,7 +67,7 @@ public void Update()
 		/*
 		 * if game is not paused and theres a input check
 		 */
-    if  (!GameManager.paused && this.inputs.keyCheck) {
+    if  (!GameManager.paused && !hasFinished && this.inputs.keyCheck) {
         if (this.inputs.keySuccess)
         {
 			/*for finger mini game*/
@@ -80,7 +80,6 @@ public void Update()
 			/*for toys mini game */
 			else if(destruct && destruct.health <= 0){
 					destruct.isDestroyed = true;
-					AddScore(lastPoints);
 					Finish();
 			}
 			else{
