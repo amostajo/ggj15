@@ -75,11 +75,6 @@ public void Update()
     if  (!GameManager.paused && !hasFinished && this.inputs.keyCheck) {
         if (this.inputs.keySuccess)
         {
-            if (audio)
-            {
-                audio.clip = clipSuccess;
-                audio.Play();
-            }
 			/*for finger mini game*/
             AddScore(1);
             if (pusher && pusher.rigidbody)
