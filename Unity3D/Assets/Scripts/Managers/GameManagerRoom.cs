@@ -146,7 +146,7 @@ public class GameManagerRoom : GameManager {
    */
   public void OnButtonPress (InputManager.GUIAction action, int value) {
   	switch (GUI.state) {
-  		case GUIManager.State.gameplay:
+  		case GUIManager.State.message:
 		    switch (action) {
 		    	case InputManager.GUIAction.next:
 		    		switch (GameManager.minigame) {
