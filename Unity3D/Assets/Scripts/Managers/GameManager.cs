@@ -136,13 +136,11 @@ public class GameManager : MonoBehaviour {
     /**
     * Play Sound Effects command
     */
-    public void PlaySFX()
-    {
-        if (audio)
-        {
-            audio.clip = clipSuccess;
-            audio.Play();
-        }
+    public void PlaySFX () {
+      if (audio) {
+        audio.clip = clipSuccess;
+        audio.Play();
+      }
     }
 
 	/**
@@ -173,15 +171,18 @@ public class GameManager : MonoBehaviour {
 	 * Called when game has finished.
 	 */
 	public virtual void Finish () {
-        if (audio)
-        {
-            audio.clip = clipFail;
-            audio.Play();
-        }
+    if (audio) {
+      audio.clip = clipFail;
+      audio.Play();
+    }
 		PlayerPrefs.SetInt("score", score);
 		// Check end
 		switch (GameManager.minigame) {
 			case GameManager.Minigame.toys:
+				paused = true;
+				On_TimerChange(0f);
+				PlayerPrefs.SetInt(minigame.ToString(), 1);
+				StartCoroutine(LateEnd("room", 1f));
 				break;
 			case GameManager.Minigame.guitar:
 				paused = true;
