@@ -60,15 +60,20 @@ public void Update()
             }
         }
     }
+		/*
+		 * if game is not paused and theres a input check
+		 */
     if  (!GameManager.paused && this.inputs.keyCheck) {
         if (this.inputs.keySuccess)
         {
+			/*for finger mini game*/
             AddScore(1);
             if (pusher && pusher.rigidbody)
             {
                 pusher.rigidbody.AddForce(direction*force);
                 force += force*forceFactor;
             }
+			/*for toys mini game */
 			else if(destruct && destruct.health <= 0){
 					destruct.isDestroyed = true;
 					AddScore(lastPoints);
@@ -78,6 +83,7 @@ public void Update()
 				if(destruct && destruct.health >= 0 && !destruct.isDestroyed){
 					destruct.rigidbody.AddForce(destruct.direction * force);
 					force += force*forceFactor;
+						//if there 
                     if (destruct.collisionExist){
                         timer = 0f;
                         destruct.collisionExist = false;
