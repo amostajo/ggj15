@@ -17,7 +17,7 @@ public class MinigameListener : MonoBehaviour {
 	 * Unity Awake.
 	 * Checks on played minigame for disabling.
 	 */
-	public void Awake () {
+	public void Start () {
 		if (PlayerPrefs.GetInt(minigame.ToString()) != 1) {
 			gameObject.SetActive(false);
 		}

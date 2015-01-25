@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour {
 	public static bool paused = false;
 
 	/**
+	 * Flag that indicates if game is started.
+	 */
+	public static bool started = false;
+
+	/**
 	 * Current minigame selected.
 	 */
 	public static GameManager.Minigame minigame;
@@ -61,12 +66,6 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public float timer;
 
-	/**
-	 * Character.
-	 */
-	[HideInInspector]
-	public Character character;
-
 	/** 
 	 * Returns game manager in scene.
 	 */
@@ -80,7 +79,6 @@ public class GameManager : MonoBehaviour {
 	public virtual void Awake () {
 		this.inputs = FindObjectOfType<InputManager>();
 		this.score = PlayerPrefs.GetInt("score");
-		this.character = FindObjectOfType<Character>();
 	}
 
 	/**
@@ -106,10 +104,6 @@ public class GameManager : MonoBehaviour {
 				if (this.timer >= globalTime) {
 					End();
 				}
-			}
-			// Character movement
-			if (character) {
-				character.SetMovement(inputs.movement);
 			}
 		}
 	}
