@@ -41,41 +41,34 @@ public class GameManagerRandom : GameManager {
 		this.inputs.RequestKey();
 	}
 
-	public void Update () {
-		// if game is not paused and there's a key to check
-		if (!GameManager.paused && this.inputs.keyCheck) {
-			//if the user gets the inputs success
-			if (this.inputs.keySuccess) {
+public void Update () {
+// if game is not paused and there's a key to check
+if (!GameManager.paused && !hasFinished && this.inputs.keyCheck) {
+				//if the user gets the inputs success
+		if (this.inputs.keySuccess) {
 				//add score because user sets the key and send another key to user
-			  this.AddScore(1);
+				this.AddScore (1);
 				timer = 0;
-				this.inputs.RequestKey();
-                if (audio)
-                {
-                    audio.clip = clipSuccess;
-                    audio.Play();
-                }
-			} else {
-				//if not success, end the game\
-				this.Finish();
-			}		
-		} else if (GameManager.paused) {
-			if (this.inputs.keyCheck)	{
-				if (this.inputs.keySuccess) {
-				  this.AddScore(1);
-					GameManager.paused = false;
-					this.inputs.RequestKey();
-                    if (audio)
-                    {
-                        audio.clip = clipSuccess;
-                        audio.Play();
-                    }
-				} else {
-					Finish();
-				}
-			}
+				this.inputs.RequestKey ();
+
+		} else {
+				//if not success, end the game
+				Finish ();
+		}		
 		}
-	}
+		else if (GameManager.paused && !hasFinished) {
+			if (this.inputs.keyCheck) {
+				if (this.inputs.keySuccess) {
+					this.AddScore (1);
+						GameManager.paused = false;
+						this.inputs.RequestKey ();
+				} else {
+						Finish ();
+				}
+		}
+} 
+
+}
 
 	public override void FixedUpdate ()
 	{
