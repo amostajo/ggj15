@@ -165,6 +165,10 @@ public class GameManager : MonoBehaviour {
 				StartCoroutine(LateEnd("room", 2f));
 				break;
 			case GameManager.Minigame.fire:
+				paused = true;
+				On_TimerChange(0f);
+				PlayerPrefs.SetInt(minigame.ToString(), 1);
+				StartCoroutine(LateEnd("room", 1f));
 				break;
 			case GameManager.Minigame.pencil:
 				paused = true;

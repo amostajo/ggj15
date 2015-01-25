@@ -656,8 +656,8 @@ MonoBehaviour:
   timer: 0
   GUI: {fileID: 0}
   timeToLose: 3
-  changeFrecuency: .0500000007
-  changeTime: 1.5
+  changeFrecuency: .100000001
+  changeTime: 1
   timelimit: .5
 --- !u!4 &296295188
 Transform:
