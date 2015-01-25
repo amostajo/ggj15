@@ -23,7 +23,7 @@ public class PushingObject : MonoBehaviour {
     {
         game = GameManager.Get();
     }
-
+    //start timer + initial force
 	void Start () {
         timer = 0f;
         if (rigidbody)
@@ -34,7 +34,7 @@ public class PushingObject : MonoBehaviour {
 	
 	}
 	
-	// Update is called once per frame
+	// Sets frequency and relation between frequency time and force
 	void FixedUpdate () {
 
         if (!GameManager.paused && rigidbody)
