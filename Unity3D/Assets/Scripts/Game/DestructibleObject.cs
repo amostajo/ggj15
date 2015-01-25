@@ -24,7 +24,7 @@ public class DestructibleObject : MonoBehaviour {
 	public bool collisionWall;
 
 	//Assigns horizontal movement to finger
-	public Vector3 direction = new Vector3(-1f, 0f, 0f);
+	public Vector3 direction = new Vector3(0f, 0f, -1f);
 	
 	public void Awake () {
 		game = GameManager.Get();
