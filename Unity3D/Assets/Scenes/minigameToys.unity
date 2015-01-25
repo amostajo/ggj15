@@ -610,7 +610,6 @@ MonoBehaviour:
   inputs: {fileID: 0}
   score: 0
   timer: 0
-  character: {fileID: 0}
   force: 10
   forceFactor: .0179999992
   lastPoints: 5
@@ -653,8 +652,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298040881}
   m_LocalRotation: {x: -.0011721832, y: -.903624177, z: .0713226423, w: .422344893}
-  m_LocalPosition: {x: -3.50232029, y: 1.57791674, z: -2.46924233}
-  m_LocalScale: {x: -.382737279, y: .247157693, z: .235863432}
+  m_LocalPosition: {x: -3.37852407, y: 1.56591451, z: -2.61610746}
+  m_LocalScale: {x: -.196553737, y: .177799672, z: .1754774}
   m_Children: []
   m_Father: {fileID: 1404983762}
   m_RootOrder: 10
@@ -7578,7 +7577,7 @@ Transform:
   m_GameObject: {fileID: 1302440231}
   m_LocalRotation: {x: .076033771, y: -.386764675, z: -.0734423772, w: -.916099489}
   m_LocalPosition: {x: -2.50170231, y: 1.55160093, z: -3.54742765}
-  m_LocalScale: {x: .256001592, y: .256785274, z: .27707541}
+  m_LocalScale: {x: .209693506, y: .164787263, z: .186230794}
   m_Children: []
   m_Father: {fileID: 1404983762}
   m_RootOrder: 9
