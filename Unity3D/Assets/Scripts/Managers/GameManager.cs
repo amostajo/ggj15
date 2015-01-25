@@ -51,6 +51,16 @@ public class GameManager : MonoBehaviour {
 	 */
 	public float globalTime;
 
+    /**
+     * Sound Effects for the game, when correct input
+     */
+    public AudioClip clipSuccess;
+
+    /**
+    * Sound Effects for the game, when incorrect input
+    */
+    public AudioClip clipFail;
+
 	/**
 	 * Inputs
 	 */
@@ -123,6 +133,18 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+    /**
+    * Play Sound Effects command
+    */
+    public void PlaySFX()
+    {
+        if (audio)
+        {
+            audio.clip = clipSuccess;
+            audio.Play();
+        }
+    }
+
 	/**
 	 * Called when game is paused.
 	 */
@@ -151,6 +173,11 @@ public class GameManager : MonoBehaviour {
 	 * Called when game has finished.
 	 */
 	public virtual void Finish () {
+        if (audio)
+        {
+            audio.clip = clipFail;
+            audio.Play();
+        }
 		PlayerPrefs.SetInt("score", score);
 		// Check end
 		switch (GameManager.minigame) {

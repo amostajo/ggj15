@@ -50,6 +50,11 @@ public class GameManagerRandom : GameManager {
 			  this.AddScore(1);
 				timer = 0;
 				this.inputs.RequestKey();
+                if (audio)
+                {
+                    audio.clip = clipSuccess;
+                    audio.Play();
+                }
 			} else {
 				//if not success, end the game\
 				this.Finish();
@@ -60,6 +65,11 @@ public class GameManagerRandom : GameManager {
 				  this.AddScore(1);
 					GameManager.paused = false;
 					this.inputs.RequestKey();
+                    if (audio)
+                    {
+                        audio.clip = clipSuccess;
+                        audio.Play();
+                    }
 				} else {
 					Finish();
 				}

@@ -27,6 +27,8 @@ public class DestructibleObject : MonoBehaviour
 
     public bool impacts = true;
 
+    public bool collisionWall = false;
+
     //Assigns horizontal movement to finger
     public Vector3 direction = new Vector3(0f, 0f, 1f);
 
@@ -57,6 +59,11 @@ public class DestructibleObject : MonoBehaviour
                 rigidbody.AddForce(-direction * force);
                 force += force * forceFactor;
             }
+            if (collisionWall)
+            {
+                health += reduceHealth;
+                collisionWall = false;
+            }
         }
     }
 
@@ -82,6 +89,7 @@ public class DestructibleObject : MonoBehaviour
         this.health -= reduceHealth;
         rigidbody.AddForce(-direction * impact);
         impact += impact * impactFactor;
+        game.PlaySFX();
     }
 
     //Sets velocity to zero on Walls to give more chance to players and attempt to avoid wall passing glitch
@@ -89,6 +97,7 @@ public class DestructibleObject : MonoBehaviour
     {
         rigidbody.velocity = Vector3.zero;
         rigidbody.angularVelocity = Vector3.zero;
+        collisionWall = true;
     }
 
 
