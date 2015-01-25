@@ -46,13 +46,13 @@ public class GameManagerRepetitive : GameManager {
                     pusher.rigidbody.AddForce(direction*force);
                     force += force*forceFactor;
                 }
-				else if(destruct.health <= 0){
+				else if(destruct && destruct.health <= 0){
 						destruct.isDestroyed = true;
 						AddScore(lastPoints);
 						Finish();
 				}
 				else{
-					if(destruct.health >= 0 && !destruct.isDestroyed){
+					if(destruct && destruct.health >= 0 && !destruct.isDestroyed){
 						destruct.rigidbody.AddForce(destruct.direction * force);
 						force += force*forceFactor;
 					}
