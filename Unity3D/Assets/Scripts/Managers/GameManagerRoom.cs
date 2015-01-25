@@ -251,6 +251,7 @@ public class GameManagerRoom : GameManager {
   	base.End();
   	character.Stop();
   	On_GameEnd();
+		PlayerPrefs.SetInt("score", 0);
   	StartCoroutine(ShowEndMessage());
   }
 
