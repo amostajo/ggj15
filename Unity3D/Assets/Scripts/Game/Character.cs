@@ -54,10 +54,16 @@ public class Character : MonoBehaviour {
 	private Quaternion newRotation;
 
 	/**
+	 * Animator.
+	 */
+	private Animator animator;
+
+	/**
 	 * Unity Awake
 	 */
 	public void Awake () {
 		controller = GetComponent<CharacterController>();
+		animator = GetComponentInChildren<Animator>();
 	}
 
 	/**
@@ -74,6 +80,8 @@ public class Character : MonoBehaviour {
 		if (!GameManager.paused) {
 			if (controller && controller.enabled) {
 				controller.Move(movement * speed * Time.deltaTime);
+				// Animation
+				animator.SetBool("walk", movement != Vector3.zero);
 				if (onLookAt) {
 					timer += Time.deltaTime;
 					transform.rotation = Quaternion.Lerp(oldRotation, newRotation, timer / turnTime);
