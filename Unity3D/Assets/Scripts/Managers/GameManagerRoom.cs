@@ -94,6 +94,13 @@ public class GameManagerRoom : GameManager {
 		if (!GameManager.started) {
 			savedPosition = introPosition;
 			savedRotation = introRotation;
+			PlayerPrefs.SetInt(GameManager.Minigame.toys.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.fire.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.guitar.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.pencil.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.hacky.ToString(), 0);
+			PlayerPrefs.SetInt("score", 0);
+			PlayerPrefs.SetFloat("gameTime", 0f);
 		}
 	}
 
@@ -200,13 +207,6 @@ public class GameManagerRoom : GameManager {
 			character.ShowCandle();
 			savedPosition = startPosition;
 			savedRotation = startRotation;
-			PlayerPrefs.SetInt(GameManager.Minigame.toys.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.fire.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.guitar.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.pencil.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.hacky.ToString(), 0);
-			PlayerPrefs.SetInt("score", 0);
-			PlayerPrefs.SetFloat("gameTime", 0f);
 			this.score = 0;
 			this.timer = 0f;
 			TimerChange(1f);

@@ -20,6 +20,15 @@ public class GameStateListener : MonoBehaviour {
 		tween = GetComponent<TweenColor>();
 	}
 
+	/**
+	 * Start
+	 */
+	public void Start () {
+		if (GameManager.started) {
+			OnGameBegin();
+		}
+	}
+
   /**
    * On Enable, turn on events.
    */
