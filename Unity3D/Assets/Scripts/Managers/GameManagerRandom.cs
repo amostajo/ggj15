@@ -47,6 +47,11 @@ if (!GameManager.paused && !hasFinished && this.inputs.keyCheck) {
 				//if the user gets the inputs success
 		if (this.inputs.keySuccess) {
 				//add score because user sets the key and send another key to user
+            if (audio)
+            {
+                audio.clip = clipSuccess;
+                audio.Play();
+            }
 				this.AddScore (1);
 				timer = 0;
 				this.inputs.RequestKey ();
@@ -59,6 +64,11 @@ if (!GameManager.paused && !hasFinished && this.inputs.keyCheck) {
 		else if (GameManager.paused && !hasFinished) {
 			if (this.inputs.keyCheck) {
 				if (this.inputs.keySuccess) {
+                    if (audio)
+                    {
+                        audio.clip = clipSuccess;
+                        audio.Play();
+                    }
 					this.AddScore (1);
 						GameManager.paused = false;
 						this.inputs.RequestKey ();
