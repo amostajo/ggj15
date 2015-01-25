@@ -52,7 +52,7 @@ public class DestructibleObject : MonoBehaviour
     // increases force per correct input
     public void Update()
     {
-        if (!GameManager.paused && game.inputs.keyCheck)
+        if (!GameManager.paused && !game.hasFinished && game.inputs.keyCheck)
         {
             if (game.inputs.keySuccess)
             {

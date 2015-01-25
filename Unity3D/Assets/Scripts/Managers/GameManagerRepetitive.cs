@@ -49,7 +49,7 @@ public override void Start()
 //Ends game on mistake
 public void Update()
 {
-    if (GameManager.paused && this.inputs.keyCheck)
+    if (GameManager.paused && !hasFinished && this.inputs.keyCheck)
     {
         if (this.inputs.keySuccess)
         {
@@ -81,6 +81,10 @@ public void Update()
 			else if(destruct && destruct.health <= 0){
 					destruct.isDestroyed = true;
 					Finish();
+                    destruct.rigidbody.velocity = Vector3.zero;
+                    destruct.rigidbody.angularVelocity = Vector3.zero;
+                    destruct.rigidbody.isKinematic = true;
+                    destruct.rigidbody.Sleep();
 			}
 			else{
 				if(destruct && destruct.health >= 0 && !destruct.isDestroyed){
