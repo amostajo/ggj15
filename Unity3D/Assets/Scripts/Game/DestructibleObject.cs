@@ -3,9 +3,8 @@ using System.Collections;
 
 public class DestructibleObject : MonoBehaviour {
 	
-	
+	//Assigning variables
 	private GameManager game;
-
 
 	public float health=10F;
 	
@@ -34,7 +33,7 @@ public class DestructibleObject : MonoBehaviour {
 		game = GameManager.Get();
 	}
 
-	// Use this for initialization
+	// Sends initial key and starts timer. Also sets the initial impact force
 	public void Start () {
 		game.inputs.RequestKey ();
         timer = 0f;
@@ -44,7 +43,7 @@ public class DestructibleObject : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
+	// increases force per correct input
 	public void Update () {
 				if (!GameManager.paused && game.inputs.keyCheck) {
 						if (game.inputs.keySuccess) {
@@ -56,6 +55,7 @@ public class DestructibleObject : MonoBehaviour {
 
 	public void FixedUpdate () 
     {
+        //Sets timer for game end and frequency for impact gain
         if (!GameManager.paused && rigidbody)
         {
             timer += Time.deltaTime;
@@ -66,14 +66,22 @@ public class DestructibleObject : MonoBehaviour {
                 impact += impact * impactFactor;
             }
         }
+        //This is for the game to end if the player doesn't manage contact between the blocks
+        if (!OnCollisionEnter && timer = timer + 10f)
+        {
+            Finish();
+        }
 	}
 
+
+    //This method causes damage to be inflicted to both blocks and the forces to become stronger on contact
 	public void OnCollisionEnter(){
 		this.health -= reduceHealth;
 		rigidbody.AddForce (-direction * impact);
 		impact += impact * impactFactor;
 	}
 
+    //Sets velocity to zero on Walls to give more chance to players and attempt to avoid wall passing glitch
 	public void OnTriggerEnter(Collider other) {
 		rigidbody.velocity = Vector3.zero;
 		rigidbody.angularVelocity = Vector3.zero;
