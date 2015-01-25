@@ -43,6 +43,7 @@ public class MinigameTrigger : MonoBehaviour {
 		if (collider.tag == GameManager.tagCharacter) {
 			On_MinigameTriggered(minigame, message);
 			game.GUI.ChangeTo(GUIManager.State.message);
+			GameManager.minigame = minigame;
 		}
 	}
 

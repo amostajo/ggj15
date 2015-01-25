@@ -26,7 +26,7 @@ public class InputManager : MonoBehaviour {
   // Input scheme
   public enum Scheme {mobile = 0, desktop = 1, console = 2};
   // Gui actions
-  public enum GUIAction {turbo = 0, fire = 1, ammo = 2, next = 3, back = 4, option = 5};
+  public enum GUIAction {back = 0, next = 1, option = 2};
 
   /**
    * Game inputs.
@@ -141,31 +141,6 @@ public class InputManager : MonoBehaviour {
         break;
 
     }
-  }
-
-  /**
-   * On button press.
-   *
-   * @param InputManager.GUIAction action GUI action to make.
-   * @param bool                   isDown Indicates if value is down.
-   * @param int                    value  Value related to button.
-   */
-  public void OnButtonPress (InputManager.GUIAction action, bool isDown, int value) {
-    // TODO
-  }
-
-  /**
-   * On Enable, turn on events.
-   */
-  public void OnEnable () {
-    //ButtonListener.On_ButtonPress += OnButtonPress;
-  }
-
-  /**
-   * On Disable, turn off events.
-   */
-  public void OnDisable (){
-    //ButtonListener.On_ButtonPress -= OnButtonPress;
   }
 
   /**

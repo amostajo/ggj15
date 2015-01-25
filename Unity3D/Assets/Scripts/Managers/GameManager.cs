@@ -9,7 +9,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	// Minigame
-	public enum Minigame {none = -1, toys = 0, guitar = 1, fire = 2, pencil = 3, haki = 4};
+	public enum Minigame {none = -1, toys = 0, guitar = 1, fire = 2, pencil = 3, hacky = 4};
 
 	// Character
 	public static string tagCharacter = "character";

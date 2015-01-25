@@ -58,7 +58,7 @@ public class GameManagerRoom : GameManager {
 			PlayerPrefs.SetInt(GameManager.Minigame.fire.ToString(), 0);
 			PlayerPrefs.SetInt(GameManager.Minigame.guitar.ToString(), 0);
 			PlayerPrefs.SetInt(GameManager.Minigame.pencil.ToString(), 0);
-			PlayerPrefs.SetInt(GameManager.Minigame.haki.ToString(), 0);
+			PlayerPrefs.SetInt(GameManager.Minigame.hacky.ToString(), 0);
 			PlayerPrefs.SetInt("score", 0);
 			PlayerPrefs.SetFloat("gameTime", 0f);
 			this.score = 0;
@@ -91,5 +91,60 @@ public class GameManagerRoom : GameManager {
 			}
 		}
 	}
+
+  /**
+   * On button press.
+   *
+   * @param InputManager.GUIAction action GUI action to make.
+   * @param int                    value  Value related to button.
+   */
+  public void OnButtonPress (InputManager.GUIAction action, int value) {
+    switch (action) {
+    	case InputManager.GUIAction.next:
+    		switch (GameManager.minigame) {
+    			case GameManager.Minigame.toys:
+    				StartCoroutine(LateEnd("minigameToys"));
+    				break;
+    			case GameManager.Minigame.guitar:
+    				StartCoroutine(LateEnd("minigameGuitar"));
+    				break;
+    			case GameManager.Minigame.fire:
+    				StartCoroutine(LateEnd("minigameFire"));
+    				break;
+    			case GameManager.Minigame.pencil:
+    				StartCoroutine(LateEnd("minigamePencil"));
+    				break;
+    			case GameManager.Minigame.hacky:
+    				StartCoroutine(LateEnd("minigameHacky"));
+    				break;
+    		}
+    		break;
+    }
+  }
+
+  /**
+   * On Enable, turn on events.
+   */
+  public void OnEnable () {
+    ButtonListener.On_ButtonPress += OnButtonPress;
+  }
+
+  /**
+   * On Disable, turn off events.
+   */
+  public void OnDisable (){
+    ButtonListener.On_ButtonPress -= OnButtonPress;
+  }
+
+  /**
+   * Transitions to next level after animations have occured.
+   *
+   * @param string levelName Level name.
+   */
+  public IEnumerator LateEnd (string levelName) {
+  	GUI.ChangeTo(GUIManager.State.loading);
+  	yield return new WaitForSeconds(1f);
+  	Application.LoadLevel(levelName);
+  }
 
 }

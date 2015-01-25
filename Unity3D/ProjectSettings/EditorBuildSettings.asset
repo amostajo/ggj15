@@ -9,3 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/room.unity
   - enabled: 1
     path: Assets/Scenes/minigameToys.unity
+  - enabled: 1
+    path: Assets/Scenes/minigameGuitar.unity
+  - enabled: 1
+    path: Assets/Scenes/minigameFire.unity
+  - enabled: 1
+    path: Assets/Scenes/minigamePencil.unity
+  - enabled: 1
+    path: Assets/Scenes/minigameHacky.unity
