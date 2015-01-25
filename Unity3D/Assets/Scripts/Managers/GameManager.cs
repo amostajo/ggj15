@@ -169,10 +169,19 @@ public class GameManager : MonoBehaviour {
 			case GameManager.Minigame.pencil:
 				paused = true;
 				On_TimerChange(0f);
+  			GUI.ChangeTo(GUIManager.State.loading);
 				PlayerPrefs.SetInt(minigame.ToString(), 1);
-				StartCoroutine(LateEnd("room", 2f));
+				StartCoroutine(LateEnd("room", 1f));
 				break;
 			case GameManager.Minigame.hacky:
+				paused = true;
+				On_TimerChange(0f);
+				aux = GameObject.FindWithTag(GameManager.tagCharacter).GetComponentInChildren<Animator>();
+				aux.SetBool("playHacky", false);
+				aux = GameObject.FindWithTag("ball").GetComponentInChildren<Animator>();
+				aux.SetBool("playHacky", false);
+				PlayerPrefs.SetInt(minigame.ToString(), 1);
+				StartCoroutine(LateEnd("room", 2f));
 				break;
 		}
 	}
