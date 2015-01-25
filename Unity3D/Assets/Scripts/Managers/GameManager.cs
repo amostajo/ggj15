@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour {
 	// Minigame
 	public enum Minigame {none = -1, toys = 0, guitar = 1, fire = 2, pencil = 3, haki = 4};
 
+	// Character
+	public static string tagCharacter = "character";
+
 	/**
 	 * On score update event.
 	 */
@@ -66,6 +69,12 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public float timer;
 
+	/**
+	 * GUI manager reference.
+	 */
+	[HideInInspector]
+	public GUIManager GUI;
+
 	/** 
 	 * Returns game manager in scene.
 	 */
@@ -79,6 +88,7 @@ public class GameManager : MonoBehaviour {
 	public virtual void Awake () {
 		this.inputs = FindObjectOfType<InputManager>();
 		this.score = PlayerPrefs.GetInt("score");
+		this.GUI = FindObjectOfType<GUIManager>();
 	}
 
 	/**
