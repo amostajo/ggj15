@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: ea44a2e28d3d0d6469ce1122ad0d0b4f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_R
+    100004: Foot2_L
+    100006: Foot2_R
+    100008: Foot_L
+    100010: Foot_R
+    100012: ForeArm_L
+    100014: ForeArm_R
+    100016: group
+    100018: //RootNode
+    100020: Head
+    100022: Hip
+    100024: joint13
+    100026: joint6
+    100028: joint6 1
+    100030: Leg_L
+    100032: Neck
+    100034: Neck2
+    100036: polySurface3
+    100038: Reg_R
+    100040: Spline
+    100042: Spline2
+    100044: Tight_L
+    100046: Tight_R
+    100048: Wrist_L
+    100050: Wrist_L1
+    100052: Wrist_L2
+    100054: Wrist_L3
+    100056: Wrist_L3 1
+    100058: Wrist_L3 2
+    100060: Wrist_L3 3
+    100062: Wrist_L4
+    100064: Wrist_L4 1
+    100066: Wrist_L4 2
+    100068: Wrist_L4 3
+    100070: Wrist_L5
+    100072: Wrist_L6
+    100074: Wrist_L7
+    100076: Wrist_R
+    100078: Wrist_R1
+    100080: Wrist_R2
+    100082: Wrist_R3
+    100084: Wrist_R3 1
+    100086: Wrist_R3 2
+    100088: Wrist_R3 3
+    100090: Wrist_R4
+    100092: Wrist_R4 1
+    100094: Wrist_R4 2
+    100096: Wrist_R4 3
+    100098: Wrist_R5
+    100100: Wrist_R6
+    100102: Wrist_R7
+    400000: Arm_L
+    400002: Arm_R
+    400004: Foot2_L
+    400006: Foot2_R
+    400008: Foot_L
+    400010: Foot_R
+    400012: ForeArm_L
+    400014: ForeArm_R
+    400016: group
+    400018: //RootNode
+    400020: Head
+    400022: Hip
+    400024: joint13
+    400026: joint6
+    400028: joint6 1
+    400030: Leg_L
+    400032: Neck
+    400034: Neck2
+    400036: polySurface3
+    400038: Reg_R
+    400040: Spline
+    400042: Spline2
+    400044: Tight_L
+    400046: Tight_R
+    400048: Wrist_L
+    400050: Wrist_L1
+    400052: Wrist_L2
+    400054: Wrist_L3
+    400056: Wrist_L3 1
+    400058: Wrist_L3 2
+    400060: Wrist_L3 3
+    400062: Wrist_L4
+    400064: Wrist_L4 1
+    400066: Wrist_L4 2
+    400068: Wrist_L4 3
+    400070: Wrist_L5
+    400072: Wrist_L6
+    400074: Wrist_L7
+    400076: Wrist_R
+    400078: Wrist_R1
+    400080: Wrist_R2
+    400082: Wrist_R3
+    400084: Wrist_R3 1
+    400086: Wrist_R3 2
+    400088: Wrist_R3 3
+    400090: Wrist_R4
+    400092: Wrist_R4 1
+    400094: Wrist_R4 2
+    400096: Wrist_R4 3
+    400098: Wrist_R5
+    400100: Wrist_R6
+    400102: Wrist_R7
+    4300000: polySurface3
+    7400000: Haki
+    7400002: Fail
+    9500000: //RootNode
+    13700000: polySurface3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Haki
+      takeName: Haki
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/Hip
+        weight: 1
+      - path: group/Hip/Spline
+        weight: 1
+      - path: group/Hip/Spline/Spline2
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L2/Wrist_L3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L2/Wrist_L3/Wrist_L4
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L5
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L5/Wrist_L3
+          1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L5/Wrist_L3
+          1/Wrist_L4 1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L6
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L6/Wrist_L3
+          2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L6/Wrist_L3
+          2/Wrist_L4 2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L7
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L7/Wrist_L3
+          3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L7/Wrist_L3
+          3/Wrist_L4 3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R2/Wrist_R3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R2/Wrist_R3/Wrist_R4
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R5
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R5/Wrist_R3
+          1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R5/Wrist_R3
+          1/Wrist_R4 1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R6
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R6/Wrist_R3
+          2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R6/Wrist_R3
+          2/Wrist_R4 2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R7
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R7/Wrist_R3
+          3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R7/Wrist_R3
+          3/Wrist_R4 3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Neck
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Neck/Neck2
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Neck/Neck2/Head
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Neck/Neck2/Head/joint13
+        weight: 0
+      - path: group/Hip/Tight_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L/Foot_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L/Foot_L/Foot2_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L/Foot_L/Foot2_L/joint6
+        weight: 0
+      - path: group/Hip/Tight_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R/Foot_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R/Foot_R/Foot2_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R/Foot_R/Foot2_R/joint6 1
+        weight: 0
+      - path: polySurface3
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fail
+      takeName: Fail
+      firstFrame: 30
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/Hip
+        weight: 1
+      - path: group/Hip/Spline
+        weight: 1
+      - path: group/Hip/Spline/Spline2
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L2/Wrist_L3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L2/Wrist_L3/Wrist_L4
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L5
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L5/Wrist_L3
+          1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L5/Wrist_L3
+          1/Wrist_L4 1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L6
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L6/Wrist_L3
+          2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L6/Wrist_L3
+          2/Wrist_L4 2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L7
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L7/Wrist_L3
+          3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_L/ForeArm_L/Wrist_L/Wrist_L1/Wrist_L7/Wrist_L3
+          3/Wrist_L4 3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R2/Wrist_R3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R2/Wrist_R3/Wrist_R4
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R5
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R5/Wrist_R3
+          1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R5/Wrist_R3
+          1/Wrist_R4 1
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R6
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R6/Wrist_R3
+          2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R6/Wrist_R3
+          2/Wrist_R4 2
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R7
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R7/Wrist_R3
+          3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Arm_R/ForeArm_R/Wrist_R/Wrist_R1/Wrist_R7/Wrist_R3
+          3/Wrist_R4 3
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Neck
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Neck/Neck2
+        weight: 1
+      - path: group/Hip/Spline/Spline2/Neck/Neck2/Head
+        weight: 0
+      - path: group/Hip/Spline/Spline2/Neck/Neck2/Head/joint13
+        weight: 0
+      - path: group/Hip/Tight_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L/Foot_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L/Foot_L/Foot2_L
+        weight: 1
+      - path: group/Hip/Tight_L/Leg_L/Foot_L/Foot2_L/joint6
+        weight: 0
+      - path: group/Hip/Tight_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R/Foot_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R/Foot_R/Foot2_R
+        weight: 1
+      - path: group/Hip/Tight_R/Reg_R/Foot_R/Foot2_R/joint6 1
+        weight: 0
+      - path: polySurface3
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Tight_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Tight_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leg_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Reg_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spline
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spline2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck2
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ForeArm_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ForeArm_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Wrist_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Wrist_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot2_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot2_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: HakiAnim(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: group
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hip
+      position: {x: -.0782432556, y: 9.15585518, z: -.160931185}
+      rotation: {x: -6.94743485e-10, y: 2.82624502e-09, z: .238712087, w: .971090376}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Spline
+      position: {x: .710179508, y: 1.35675919, z: -.344384611}
+      rotation: {x: .278926492, y: -.649769247, z: -.548385441, w: .446400583}
+      scale: {x: 1.00000024, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Spline2
+      position: {x: -2.88182998, y: 2.84217088e-16, z: 1.26217742e-31}
+      rotation: {x: -.963938475, y: .2661255, z: -2.56709249e-08, w: 3.3426943e-08}
+      scale: {x: 1.00000012, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: Neck
+      position: {x: -1.90839684, y: 0, z: -1.08703801e-16}
+      rotation: {x: -7.52581997e-08, y: -1.04576552e-08, z: -.071111612, w: .997468412}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck2
+      position: {x: -1.74149263, y: -1.13686835e-15, z: -4.43948099e-17}
+      rotation: {x: 4.57088412e-08, y: -1.4516103e-08, z: -.0413699113, w: .999143958}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Head
+      position: {x: -2.23457551, y: 5.68434176e-16, z: -1.54567664e-17}
+      rotation: {x: -2.92628712e-08, y: 3.03321812e-08, z: -.00559782004, w: .999984384}
+      scale: {x: 1, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: joint13
+      position: {x: -3.71157408, y: 8.88178367e-17, z: -1.63231008e-17}
+      rotation: {x: .493790537, y: -.506133378, z: .493790537, w: .506133318}
+      scale: {x: 1.00000012, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Arm_L
+      position: {x: -2.21728683, y: -.582145631, z: -1.96585739}
+      rotation: {x: .388097227, y: -.529923916, z: .482085437, w: .579788744}
+      scale: {x: .999999821, y: .999999702, z: .999999762}
+      transformModified: 1
+    - name: ForeArm_L
+      position: {x: -3.2832222, y: -4.54747341e-15, z: -.572661459}
+      rotation: {x: -.00258602598, y: -.0881453156, z: -.0439915657, w: .995132446}
+      scale: {x: .99999994, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Wrist_L
+      position: {x: -3.51655722, y: -.0325470455, z: .393267363}
+      rotation: {x: 3.23825908e-08, y: 1.24527562e-08, z: .0180476159, w: .999837101}
+      scale: {x: 1.00000024, y: .999999762, z: 1.00000012}
+      transformModified: 1
+    - name: Wrist_L1
+      position: {x: -.884924889, y: .0814536288, z: .209031671}
+      rotation: {x: -2.33787141e-08, y: 3.99946529e-08, z: -2.84070492e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_L7
+      position: {x: .0524367169, y: -.412073344, z: .474563867}
+      rotation: {x: .675352395, y: .591709197, z: -.106661677, w: .427086383}
+      scale: {x: .999999881, y: 1, z: .999999762}
+      transformModified: 1
+    - name: Wrist_L3 3
+      position: {x: -.416796148, y: -.136007637, z: .0555739999}
+      rotation: {x: 3.84437691e-08, y: 3.24321654e-08, z: -1.56514162e-08, w: 1}
+      scale: {x: 1, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: Wrist_L4 3
+      position: {x: -.395378381, y: -.380053103, z: -.0520151332}
+      rotation: {x: -3.59623868e-08, y: -7.87162868e-09, z: 3.05530978e-09, w: 1}
+      scale: {x: .99999994, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Wrist_L6
+      position: {x: -.750655293, y: -.228969738, z: .353873551}
+      rotation: {x: -4.0732612e-08, y: .0986249521, z: 2.58666812e-08, w: .995124698}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_L3 2
+      position: {x: -.423095465, y: -.210176021, z: -.0393866226}
+      rotation: {x: 3.6264435e-08, y: 3.55590259e-08, z: 5.11029015e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_L4 2
+      position: {x: -.395378381, y: -.380053103, z: -.0520151332}
+      rotation: {x: -1.85257658e-08, y: -2.44773535e-08, z: -3.62843444e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_L5
+      position: {x: -1.03453183, y: -.102915913, z: .0735834688}
+      rotation: {x: .0232539605, y: .0653648674, z: .143550307, w: .987208188}
+      scale: {x: .999999881, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: Wrist_L3 1
+      position: {x: -.471315324, y: 0, z: -2.84217088e-16}
+      rotation: {x: .000469862862, y: .000654720934, z: .135837242, w: .990730822}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Wrist_L4 1
+      position: {x: -.607582986, y: -4.54747341e-15, z: -2.84217088e-16}
+      rotation: {x: -.0322872736, y: -.0623140149, z: -.276303828, w: .958504438}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Wrist_L2
+      position: {x: -1.01260591, y: .0426945202, z: -.341700345}
+      rotation: {x: .0240614563, y: .0678921565, z: .142340511, w: .987193465}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Wrist_L3
+      position: {x: -.468791902, y: 4.54747341e-15, z: 2.84217088e-16}
+      rotation: {x: -.00757727586, y: -.0130270263, z: .0430094115, w: .998960972}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_L4
+      position: {x: -.561309099, y: -4.54747341e-15, z: 8.52651264e-16}
+      rotation: {x: -.0213305019, y: -.0528480038, z: -.184852198, w: .98111248}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Arm_R
+      position: {x: -2.21724319, y: -.582157314, z: 1.96585989}
+      rotation: {x: .29467392, y: -.694066584, z: .524275601, w: .395694226}
+      scale: {x: 1, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: ForeArm_R
+      position: {x: 2.73853683, y: -1.81105995, z: -.572660983}
+      rotation: {x: .0362880826, y: .0803719908, z: -.086233601, w: .992364526}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Wrist_R
+      position: {x: 3.32485795, y: -1.1456424, z: .393266976}
+      rotation: {x: 3.5395761e-08, y: -3.73941482e-08, z: .0180476177, w: .999837101}
+      scale: {x: 1, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Wrist_R1
+      position: {x: .848172843, y: -.265190184, z: .209031597}
+      rotation: {x: -2.72389986e-08, y: 1.06769047e-08, z: 3.55305829e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_R7
+      position: {x: -.206892714, y: -.360220224, z: .47456339}
+      rotation: {x: .675352395, y: .591709197, z: -.106661759, w: .427086264}
+      scale: {x: .999999881, y: .999999762, z: 1}
+      transformModified: 1
+    - name: Wrist_R3 3
+      position: {x: -.378264427, y: .113455191, z: .198268414}
+      rotation: {x: 3.55181946e-08, y: 1.7677495e-08, z: 3.60096202e-08, w: 1}
+      scale: {x: .999999821, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_R4 3
+      position: {x: -.287877917, y: .316847175, z: .346768916}
+      rotation: {x: -8.73216965e-09, y: -5.67245184e-09, z: -1.14480481e-09, w: 1}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Wrist_R6
+      position: {x: .604822159, y: -.50002557, z: .353873402}
+      rotation: {x: 1.48688475e-08, y: .0986250788, z: -6.38587636e-08, w: .995124698}
+      scale: {x: 1.00000024, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Wrist_R3 2
+      position: {x: .294537872, y: -.35657835, z: .104270838}
+      rotation: {x: 4.41351755e-09, y: 1.23715944e-08, z: 2.86914226e-08, w: 1}
+      scale: {x: .999999881, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Wrist_R4 2
+      position: {x: .21155858, y: -.503841937, z: .0694832131}
+      rotation: {x: -3.37700223e-09, y: -1.5066103e-08, z: -5.40377734e-08, w: 1}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Wrist_R5
+      position: {x: .915352464, y: -.492886901, z: .0735833943}
+      rotation: {x: .0232540369, y: .0653649494, z: .143550202, w: .987208247}
+      scale: {x: .99999994, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: Wrist_R3 1
+      position: {x: .251413018, y: -.38193506, z: .114251487}
+      rotation: {x: .00046977881, y: .000654722739, z: .135837257, w: .990730822}
+      scale: {x: 1.00000012, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Wrist_R4 1
+      position: {x: .019809816, y: -.594893396, z: .12226361}
+      rotation: {x: -.0322872698, y: -.0623140931, z: -.276303828, w: .958504438}
+      scale: {x: .99999994, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: Wrist_R2
+      position: {x: .951163232, y: -.350035936, z: -.341700584}
+      rotation: {x: .0240614973, y: .0678923279, z: .142340437, w: .987193465}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Wrist_R3
+      position: {x: .250761539, y: -.378136426, z: .11802195}
+      rotation: {x: -.00757731404, y: -.0130271548, z: .0430094078, w: .998961031}
+      scale: {x: .99999994, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Wrist_R4
+      position: {x: .224226907, y: -.503303051, z: .106858678}
+      rotation: {x: -.0213305112, y: -.0528480224, z: -.184852168, w: .981112599}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Tight_R
+      position: {x: .953160763, y: -1.37356973, z: 0}
+      rotation: {x: -6.41289866e-09, y: -1.82498177e-08, z: .453712404, w: .89114815}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Reg_R
+      position: {x: -2.81666708, y: -.851972878, z: 0}
+      rotation: {x: .000512920553, y: -.0780831501, z: .00654870877, w: .996925235}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Foot_R
+      position: {x: -3.73797846, y: -1.0242722, z: -1.42108544e-16}
+      rotation: {x: .441545814, y: .238932088, z: -.306504518, w: .808704972}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Foot2_R
+      position: {x: -1.58870113, y: -.320566058, z: .66476804}
+      rotation: {x: .126545548, y: .263086379, z: -.414583206, w: .861912191}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: joint6 1
+      position: {x: -1.43625271, y: 1.42108544e-16, z: -.100019008}
+      rotation: {x: -1.19638965e-08, y: -.732656837, z: -4.90610885e-09, w: .680598319}
+      scale: {x: 1, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Tight_L
+      position: {x: -1.67188942, y: 3.00146598e-06, z: 0}
+      rotation: {x: -3.06877652e-08, y: 8.58161808e-09, z: .453712404, w: .89114815}
+      scale: {x: 1.00000012, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Leg_L
+      position: {x: -2.942698, y: -4.21449158e-06, z: 0}
+      rotation: {x: .000512927305, y: -.0780831873, z: .00654870784, w: .996925235}
+      scale: {x: .999999821, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: Foot_L
+      position: {x: -3.87577295, y: 6.66640346e-07, z: 4.26325632e-16}
+      rotation: {x: .441545904, y: .238932177, z: -.306504518, w: .808704972}
+      scale: {x: 1, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: Foot2_L
+      position: {x: -1.71851861, y: -.15808925, z: .300586432}
+      rotation: {x: .126545534, y: .263086289, z: -.414583176, w: .861912191}
+      scale: {x: 1, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: joint6
+      position: {x: -1.43538153, y: 1.03028694e-15, z: -.111826912}
+      rotation: {x: 5.77593937e-08, y: -.732656837, z: -1.186873e-08, w: .680598319}
+      scale: {x: .99999994, y: .99999994, z: .999999523}
+      transformModified: 1
+    - name: polySurface3
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
