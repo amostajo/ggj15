@@ -24,11 +24,6 @@ public class Character : MonoBehaviour {
 	private Vector3 movement;
 
 	/**
-	 * Look at vector
-	 */
-	private Vector3 lookAt;
-
-	/**
 	 * Movement
 	 */
 	private bool onLookAt;
@@ -100,7 +95,6 @@ public class Character : MonoBehaviour {
 	 */
 	public void SetMovement (Vector3 direction) {
 		this.movement = direction;
-		this.lookAt = transform.localPosition + direction * 5f;
 		onLookAt = true;
 		timer = 0f;
 		oldRotation = transform.rotation;
