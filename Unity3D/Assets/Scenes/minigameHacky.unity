@@ -1685,7 +1685,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3001
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -2027,7 +2027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9595d81e39e11fe408aae5687e197510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variable: 
+  variable: playHacky
 --- !u!1 &541386775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,7 +2329,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3002
+  startingRenderQueue: 3000
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -5253,7 +5253,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3003
+  startingRenderQueue: 3002
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -8402,7 +8402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9595d81e39e11fe408aae5687e197510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variable: 
+  variable: playHacky
 --- !u!1 &1959310904
 GameObject:
   m_ObjectHideFlags: 0
