@@ -147,4 +147,11 @@ public class Character : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * Stops players.
+	 */
+	public void Stop () {
+		movement = Vector3.zero;
+	}
+
 }

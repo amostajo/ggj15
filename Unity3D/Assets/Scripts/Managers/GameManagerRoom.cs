@@ -124,7 +124,7 @@ public class GameManagerRoom : GameManager {
 	 */
 	public override void FixedUpdate () {
 		base.FixedUpdate();
-		if (!GameManager.paused) {
+		if (!GameManager.paused && !hasFinished) {
 			// Character movement
 			if (started && character) {
 				character.SetMovement(inputs.movement);
@@ -173,6 +173,18 @@ public class GameManagerRoom : GameManager {
 		    switch (action) {
 		    	case InputManager.GUIAction.next:
 		    		BeginGame();
+		    		break;
+		    }
+		    break;
+
+  		case GUIManager.State.end:
+		    switch (action) {
+		    	case InputManager.GUIAction.next:
+		    		GameManager.started = false;
+		    		Application.LoadLevel(Application.loadedLevel);
+		    		break;
+		    	case InputManager.GUIAction.back:
+		    		Application.Quit();
 		    		break;
 		    }
 		    break;
@@ -233,6 +245,16 @@ public class GameManagerRoom : GameManager {
   }
 
   /**
+   * On game end.
+   */
+  public override void End () {
+  	base.End();
+  	character.Stop();
+  	On_GameEnd();
+  	StartCoroutine(ShowEndMessage());
+  }
+
+  /**
    * Transitions to next level after animations have occured.
    *
    * @param string levelName Level name.
@@ -268,6 +290,14 @@ public class GameManagerRoom : GameManager {
  	private void RepositionCharacter () {
 		character.transform.localPosition = savedPosition;
 		character.transform.Rotate(savedRotation);
+ 	}
+
+ 	/**
+ 	 * Ends game.
+ 	 */
+ 	public IEnumerator ShowEndMessage () {
+ 		yield return new WaitForSeconds(2f);
+ 		GUI.ChangeTo(GUIManager.State.end);
  	}
 
 }

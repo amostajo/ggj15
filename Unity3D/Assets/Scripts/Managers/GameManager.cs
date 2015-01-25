@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour {
 	public virtual void FixedUpdate () {
 		if (!GameManager.paused) {
 			// Global time
-			if (hasGlobalTimer) {
+			if (hasGlobalTimer && started) {
 				this.timer += Time.deltaTime;
 				On_TimerChange(1f - (timer / globalTime));
 				if (this.timer >= globalTime) {
@@ -229,7 +229,7 @@ public class GameManager : MonoBehaviour {
 	 * To be called when game is over..
 	 */
 	public virtual void End () {
-		// TODO
+		hasFinished = true;
 	}
 
 	/**

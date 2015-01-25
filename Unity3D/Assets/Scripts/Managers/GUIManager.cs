@@ -16,7 +16,7 @@ public class GUIManager : MonoBehaviour {
    * Enum with the different states available in GUI manager,
    */
   public enum State {
-      welcome = 0, loading = 1, gameplay = 2, message = 3, logo = 4
+      welcome = 0, loading = 1, gameplay = 2, message = 3, logo = 4, end = 5
   };
 
   /**
