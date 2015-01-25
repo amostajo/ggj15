@@ -335,7 +335,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -632,6 +632,9 @@
        width="110"
        height="110"
        x="610"
-       y="257.36218" />
+       y="257.36218"
+       inkscape:export-filename="C:\Users\Alejandro\Documents\GitHub\ggj15\Unity3D\Assets\Textures\Gui\black.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
